@@ -27,8 +27,93 @@
         </div>
       </nav>
     </header>
-    <main>
-
+    <main class="form">
+      <section class="form__info">
+        <h2 class="form__info-main">Подбор программы</h2>
+        <p>Заполните анкету и мы подберем программу питания для вашего кота</p>
+        <p class="form__info-list">
+          <label class="form__label" for="info-list-it">ИМЯ:*</label>
+          <input class="form__input" id="info-list-it" type="text" name="name" value="" placeholder="Барсик">
+        </p>
+        <p class="form__info-list">
+          <label class="form__label" for="info-list-it">ВЕС (КГ):*</label>
+          <input class="form__input" id="info-list-it" type="text" name="weight" value="" placeholder="7">
+        </p>
+        <p class="form__info-list">
+          <label class="form__label" for="info-list-it">ВОЗРАСТ (ЛЕТ):</label>
+          <input class="form__input" id="info-list-it" type="text" name="age" value="" placeholder="7">
+        </p>
+      </section>
+      <section class="form__target">
+        <label class="form__target-item">
+          <input class="form__radio" type="radio" name="slim" value="" checked>
+          Похудение
+        </label>
+        <label class="form__target-item">
+          <input class="form__radio" type="radio" name="pro" value="">
+          Набор массы
+        </label>
+        <label class="form__target-item">
+          <input class="form__radio" type="radio" name="help" value="">
+          Не знаю (нужен ваш совет)
+        </label>
+      </section>
+      <section class="form__contact">
+        <h3 class="form__main">Контактные данные (владельца кота)</h3>
+        <p class="form__contact-item contact">
+          <label class="form__label" for="email">Email:*</label>
+          <input class="form__input" id="email" type="email" name="email" value="" placeholder="kuklachev@gmail.com">
+          <button class="contact-button" type="button"  aria-label="Почта">
+            <svg></svg>
+          </button>
+        </p>
+        <p class="form__contact-item contact">
+          <label class="form__label" for="phone">Телефон:*</label>
+          <input class="form__input" id="phone" type="tel" name="phone" value="" placeholder="8 (960) 900-60-90">
+          <button class="contact-button" type="button"  aria-label="Телефон">
+            <svg></svg>
+          </button>
+        </p>
+      </section>
+      <section class="form__comment">
+        <h3 class="form__main">Комментарий</h3>
+        <input class="form__comment--input" id="form-comment__it" type="text" name="comment" value="" placeholder="Расскажите обо всех повадках кота">
+      </section>
+      <section class="form__optional">
+        <h3 class="form__main">Дополнительно</h3>
+        <ul class="form__optional-list">
+          <li class="form__checkbox">
+            <label class="form__checkbox-item" for="sugar">
+            <input class="visually-hidden" type="checkbox" name="sugar" id="sugar" checked>
+            <span class="checkbox-indicator"></span>
+            Сахарозаменитель
+            </label>
+          </li>
+          <li class="form__checkbox">
+            <label class="form__checkbox-item" for="water">
+            <input class="visually-hidden" type="checkbox" name="water" id="water">
+            <span class="checkbox-indicator"></span>
+            Питьевая вода
+            </label>
+          </li>
+          <li class="form__checkbox">
+            <label class="form__checkbox-item" for="milk">
+            <input class="visually-hidden" type="checkbox" name="milk" id="milk">
+            <span class="checkbox-indicator"></span>
+            Молоко
+            </label>
+          </li>
+          <li class="form__checkbox">
+            <label class="form__checkbox-item" for="vitamins">
+            <input class="visually-hidden" type="checkbox" name="vitamins" id="vitamins">
+            <span class="checkbox-indicator"></span>
+            Витамины
+            </label>
+          </li>
+        </ul>
+      </section>
+      <button type="submit" class="form__send-order button">Отправить заявку</button>
+      <p class="form__text">* — Обязательные поля</p>
     </main>
     <footer class="page-footer">
       <h2 class="page-footer__logo-name">CAT ENERGY</h2>
