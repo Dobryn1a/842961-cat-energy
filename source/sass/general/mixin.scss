@@ -1,0 +1,11 @@
+@mixin oswaldmedium ($font-size, $line-height) {
+  font-family: "Oswaldmedium", "Arial", sans-serif;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+@mixin oswaldregular ($font-size, $line-height) {
+  font-family: "Oswaldregular", "Arial", sans-serif;
+  font-size: $font-size;
+  line-height: $line-height;
+}
