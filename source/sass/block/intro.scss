@@ -1,17 +1,17 @@
 .intro {
   text-decoration: none;
   position: relative;
-}
 
-.into-main {
-  @include oswaldmedium(36px, 36px);
-  text-align: center;
-  color: $color-white;
-  background-color: #68b738;
-  background-image: url(../../img/index-background-mobile@1x.jpg);
-  background-position: top;
-  background-repeat: no-repeat;
-  text-align: center;
-  padding-top: 29px;
-  padding-bottom: 19px;
+
+    &__main
+      @include oswaldmedium(36px, 36px);
+      text-align: center;
+      color: $color-white;
+      background-color: #68b738;
+      background-image: url(../../img/index-background-mobile@1x.jpg);
+      background-position: top;
+      background-repeat: no-repeat;
+      text-align: center;
+      padding-top: 29px;
+      padding-bottom: 19px;
 }
