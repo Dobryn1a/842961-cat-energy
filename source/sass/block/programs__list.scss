@@ -1,0 +1,30 @@
+.programs__list {
+  list-style: none;
+  background-color: $color-light-grey;
+}
+
+.programs-list__main {
+  font-size: 24px;
+  line-height: 37px;
+  color: $color-text-dark-grey;
+}
+
+.programs-list__text {
+  font-family: $custome-font;
+  font-size: 14px;
+  line-height: 18px;
+  color: $color-text-light-grey;
+}
+
+.programs-list__adress {
+  font-size: 16px;
+  line-height: 16px;
+  color: $color-text-dark-grey;
+
+    &:hover {
+      color: $color-text-dark-grey;
+    }
+    &:active {
+      color: rgba(255, 255, 255, 0.3)
+    }
+}

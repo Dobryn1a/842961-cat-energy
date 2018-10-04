@@ -1,17 +1,33 @@
 .intro {
-  text-decoration: none;
-  position: relative;
+  background-image: url(../../img/index-background-mobile@1x.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  text-align: center;
+}
 
+.intro__main {
+  font-size: 36px;
+  line-height: 36px;
+  color: $color-white;
+}
 
-    &__main
-      @include oswaldmedium(36px, 36px);
-      text-align: center;
-      color: $color-white;
-      background-color: #68b738;
-      background-image: url(../../img/index-background-mobile@1x.jpg);
-      background-position: top;
-      background-repeat: no-repeat;
-      text-align: center;
-      padding-top: 29px;
-      padding-bottom: 19px;
+.intro__text {
+  font-size: 20px;
+  line-height: 20px;
+  color: $color-white;
+}
+
+.intro__form {
+  font-size: 14px;
+  line-height: 18px;
+  color: $color-white;
+  background-color: $color-green;
+
+    &:hover {
+      background-color: #5eaa2f;
+    }
+    &:active {
+      opacity: 0.3;
+      background-color: #5eaa2f;
+  }
 }

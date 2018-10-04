@@ -1,0 +1,22 @@
+
+.cooperation__invite {
+  font-size: 16px;
+  line-height: 20px;
+  color: $color-text-dark-grey;
+}
+
+.cooperation__adress {
+  font-family: $custome-font;
+  font-size: 14px;
+  line-height: 20px;
+  color: $color-text-light-grey;
+}
+
+.cooperation__map {
+  background-color: $color-light-grey;
+  background-image: url(../../img/bg-map-mobile@1x.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  width: 320px;
+  height: 362px;
+}

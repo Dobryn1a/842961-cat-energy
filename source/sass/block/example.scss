@@ -1,0 +1,44 @@
+.example {
+  background-color: $color-light-grey;
+  background-image: url(../../img/before-mobile@1x.png);
+  /*background-position: top;*/
+  background-repeat: no-repeat;
+
+}
+
+.example__main {
+  font-size: 36px;
+  line-height: 60px;
+  color: $color-text-dark-grey;
+}
+
+.example__text {
+  font-family: $custome-font;
+  font-size: 14px;
+  line-height: 18px;
+  color: $color-text-light-grey;
+}
+
+.example__results {
+  list-style: none;
+}
+
+.example__results-main {
+  font-size: 24px;
+  line-height: 24px;
+  color: $color-text-dark-grey;
+}
+
+.example__results-text {
+  font-family: $custome-font;
+  font-size: 12px;
+  line-height: 12px;
+  color: $color-text-light-grey;
+}
+
+.example__cost {
+  font-size: 14px;
+  line-height: 20px;
+  color: $color-text-dark-grey;
+  text-align: center;
+}
