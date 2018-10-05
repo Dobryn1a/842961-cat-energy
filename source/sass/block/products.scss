@@ -1,5 +1,14 @@
+.products {
+  margin: 0;
+  padding: 0;
+}
+
 .products__main {
   font-size: 36px;
   line-height: 60px;
   color: $color-text-dark-grey;
+}
+
+.products__list {
+  list-style: none;
 }
