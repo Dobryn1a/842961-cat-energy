@@ -1,12 +1,9 @@
-.programs__list {
-  list-style: none;
-  background-color: $color-light-grey;
-}
-
 .programs-list__main {
   font-size: 24px;
   line-height: 37px;
+  font-weight: normal;
   color: $color-text-dark-grey;
+  text-transform: uppercase;
 }
 
 .programs-list__text {
@@ -20,11 +17,12 @@
   font-size: 16px;
   line-height: 16px;
   color: $color-text-dark-grey;
+  text-transform: uppercase;
 
     &:hover {
       color: $color-text-dark-grey;
     }
     &:active {
-      color: rgba(255, 255, 255, 0.3)
+      color: rgba(255, 255, 255, 0.3);
     }
 }

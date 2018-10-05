@@ -1,0 +1,74 @@
+.form__info-main {
+  font-size: 36px;
+  line-height: 60px;
+  color: $color-text-dark-grey;
+  font-weight: normal;
+}
+
+.form__info-text {
+  font-size: 14px;
+  line-height: 18px;
+  color: $color-text-dark-grey;
+}
+
+.form__label {
+  font-size: 16px;
+  line-height: 18px;
+  color: $color-text-medium-grey;
+}
+
+.form__label--target {
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.form__input {
+  font-size: 16px;
+  line-height: 18px;
+  color: $color-text-light-grey;
+  border: 1px solid #e6e6e6;
+
+    &:hover {
+      border: 1px solid #cdcdcd;
+    }
+    &:active {
+      border: 2px solid $color-text-light-grey;
+  }
+}
+
+.form__main {
+  font-size: 24px;
+  line-height: 24px;
+  color: $color-text-dark-grey;
+  font-weight: normal;
+}
+
+.form__comment--input {
+  font-size: 16px;
+  line-height: 18px;
+  color: $color-text-light-grey;
+}
+
+.form__send-order {
+  font-size: 14px;
+  line-height: 18px;
+  color: $color-white;
+  background-color: $color-green;
+  text-transform: uppercase;
+
+    &:hover {
+      background-color: #5eaa2f;
+    }
+    &:active {
+      opacity: 0.3;
+      background-color: #5eaa2f;
+  }
+}
+
+.form__text {
+  font-family: $custome-font;
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-text-light-grey;
+}

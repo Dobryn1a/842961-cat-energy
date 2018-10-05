@@ -1,26 +1,35 @@
-.product {
+.show-more {
   padding: 0;
   margin: 0;
 }
 
-.product__main {
+.show-more__main {
   font-size: 16px;
   line-height: 20px;
   color: $color-text-dark-grey;
   text-transform: uppercase;
+  font-weight: normal;
 }
 
-.product__description {
+.show-more__text {
   font-family: $custome-font;
   font-size: 12px;
   line-height: 16px;
   color: $color-text-light-grey;
 }
 
-.product__order {
+.show-more__button {
   font-size: 16px;
   line-height: 20px;
-  color: $color-white;
-  background-color: $color-green;
+  color: $color-text-light-grey;
+  background-color: $color-light-grey;
   text-transform: uppercase;
+
+    &:hover {
+      background-color: #ebebeb;
+    }
+    &:active {
+      opacity: 0.3;
+      background-color: #ebebeb;
+  }
 }

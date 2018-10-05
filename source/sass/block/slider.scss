@@ -2,4 +2,25 @@
   font-size: 16px;
   line-height: 18px;
   color: $color-text-dark-grey;
+  border-bottom: 1px dashed #bebebe;
+      &:hover {
+        border-bottom: 1px solid 989898;
+      }
+      &:active {
+        border-bottom: none;
+    }
+}
+
+.slider__item {
+  border: none;
+  background-color: $color-light-grey;
+}
+
+.slider__toggle {
+  font-size: 0;
+  background-color: $color-light-grey;
+  width: 35px;
+  height: 6px;
+  border-radius: 3px;
+  color: $color-green;
 }

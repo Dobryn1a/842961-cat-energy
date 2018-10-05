@@ -3,4 +3,11 @@
   font-size: 16px;
   line-height: 16px;
   color: $color-text-light-grey;
+
+    &:hover {
+      color: $color-text-light-grey;
+    }
+    &:active {
+      opacity: 0.3;
+  }
 }

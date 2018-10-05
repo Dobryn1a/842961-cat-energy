@@ -8,6 +8,7 @@
 .intro__main {
   font-size: 36px;
   line-height: 36px;
+  font-weight: normal;
   color: $color-white;
 }
 
@@ -15,6 +16,7 @@
   font-size: 20px;
   line-height: 20px;
   color: $color-white;
+  text-transform: uppercase;
 }
 
 .intro__form {
@@ -22,6 +24,7 @@
   line-height: 18px;
   color: $color-white;
   background-color: $color-green;
+  text-transform: uppercase;
 
     &:hover {
       background-color: #5eaa2f;
