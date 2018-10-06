@@ -6,6 +6,9 @@
 }
 
 .intro__main {
+  padding: 0;
+  padding-top: 29px;
+  margin: 0;
   font-size: 36px;
   line-height: 36px;
   font-weight: normal;
@@ -13,13 +16,25 @@
 }
 
 .intro__text {
-  font-size: 20px;
-  line-height: 20px;
+  padding: 0;
+  margin: 0;
+  padding-top: 19px;
+  font-size: 14px;
+  line-height: 14px;
   color: $color-white;
   text-transform: uppercase;
 }
 
+.intro__image {
+  margin-top: 29px;
+  margin-bottom: 20px;
+}
+
 .intro__form {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 73px;
+  padding-right: 73px;
   font-size: 14px;
   line-height: 18px;
   color: $color-white;

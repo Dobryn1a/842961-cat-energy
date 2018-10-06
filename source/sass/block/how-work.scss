@@ -1,15 +1,26 @@
+.how-work__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
 .how-work__main {
+  padding: 0;
+  padding-top: 32px;
+  padding-left: 22px;
+  margin: 0;
   font-size: 36px;
   line-height: 60px;
   color: $color-text-dark-grey;
   font-weight: normal;
 }
 
-.how-work__list {
-  list-style: none;
-}
-
 .how-work__text {
+  padding: 0;
+  padding-top: 41px;
+  padding-left: 100px;
+  padding-right: 26px;
+  margin: 0;
   font-family: $custome-font;
   font-size: 14px;
   line-height: 18px;
