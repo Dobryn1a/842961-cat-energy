@@ -32,11 +32,12 @@
   border: 1px solid #e6e6e6;
   text-transform: uppercase;
 
-    &:hover {
-      border: 1px solid #cdcdcd;
-    }
-    &:active {
-      border: 2px solid $color-text-light-grey;
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:active {
+    border: 2px solid $color-text-light-grey;
   }
 }
 
@@ -60,12 +61,13 @@
   background-color: $color-green;
   text-transform: uppercase;
 
-    &:hover {
-      background-color: #5eaa2f;
-    }
-    &:active {
-      opacity: 0.3;
-      background-color: #5eaa2f;
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    opacity: 0.3;
+    background-color: #5eaa2f;
   }
 }
 

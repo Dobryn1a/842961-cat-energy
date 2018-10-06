@@ -3,7 +3,6 @@
   background-image: url(../../img/before-mobile@1x.png);
   /*background-position: top;*/
   background-repeat: no-repeat;
-
 }
 
 .example__main {
@@ -29,6 +28,7 @@
   line-height: 24px;
   color: $color-text-dark-grey;
   font-weight: normal;
+  text-transform: uppercase;
 }
 
 .example__results-text {

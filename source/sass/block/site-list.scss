@@ -6,15 +6,17 @@
   text-align: center;
   border-bottom: 1px solid $color-text-light-grey;
 
-    &:hover {
-      opacity: 0.6;
-    }
-    &:active {
-      opacity: 0.3;
-    }
-    &--active {
-      border-bottom: 1px solid $color-green;
-    }
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--active {
+    border-bottom: 1px solid $color-green;
+  }
 }
 
 .site-list__href {

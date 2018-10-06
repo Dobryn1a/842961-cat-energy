@@ -25,11 +25,12 @@
   background-color: $color-light-grey;
   text-transform: uppercase;
 
-    &:hover {
-      background-color: #ebebeb;
-    }
-    &:active {
-      opacity: 0.3;
-      background-color: #ebebeb;
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    opacity: 0.3;
+    background-color: #ebebeb;
   }
 }

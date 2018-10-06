@@ -19,10 +19,11 @@
   color: $color-text-dark-grey;
   text-transform: uppercase;
 
-    &:hover {
-      color: $color-text-dark-grey;
-    }
-    &:active {
-      color: rgba(255, 255, 255, 0.3);
-    }
+  &:hover {
+    color: $color-text-dark-grey;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }

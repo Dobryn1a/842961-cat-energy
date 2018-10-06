@@ -26,11 +26,12 @@
   background-color: $color-green;
   text-transform: uppercase;
 
-    &:hover {
-      background-color: #5eaa2f;
-    }
-    &:active {
-      opacity: 0.3;
-      background-color: #5eaa2f;
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    opacity: 0.3;
+    background-color: #5eaa2f;
   }
 }
