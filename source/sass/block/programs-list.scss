@@ -1,0 +1,45 @@
+.programs-list__item {
+  background-color: $color-light-grey;
+}
+
+.programs-list__item--slim {
+  margin-bottom: 20px;
+}
+
+.programs-list__main {
+  padding: 0;
+  margin: 0;
+  padding-left: 92px;
+  padding-top: 39px;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: normal;
+  color: $color-text-dark-grey;
+  text-transform: uppercase;
+}
+
+.programs-list__text {
+  margin: 0 20px;
+  padding-top: 36px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  font-family: $custome-font;
+  font-size: 14px;
+  line-height: 18px;
+  color: $color-text-light-grey;
+}
+
+.programs-list__adress {
+  font-size: 16px;
+  line-height: 16px;
+  color: $color-text-dark-grey;
+  text-transform: uppercase;
+
+  &:hover {
+    color: $color-text-dark-grey;
+  }
+
+  &:active {
+    color: rgba(17, 17, 17, 0.3);
+  }
+}

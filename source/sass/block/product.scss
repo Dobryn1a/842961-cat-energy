@@ -1,0 +1,30 @@
+.product {
+  padding: 0;
+  margin: 0;
+}
+
+.product__main {
+  font-size: 16px;
+  line-height: 20px;
+  color: $color-text-dark-grey;
+  text-transform: uppercase;
+}
+
+.product__description {
+  font-family: $custome-font;
+  font-size: 12px;
+  line-height: 16px;
+  color: $color-text-light-grey;
+}
+
+.product__size {
+  text-align: right;
+}
+
+.product__order {
+  font-size: 16px;
+  line-height: 20px;
+  color: $color-white;
+  background-color: $color-green;
+  text-transform: uppercase;
+}

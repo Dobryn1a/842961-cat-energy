@@ -1,0 +1,37 @@
+.optional {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.optional__main {
+  font-size: 16px;
+  line-height: 16px;
+  color: $color-text-medium-grey;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.optional__table {
+  font-family: $custome-font;
+  font-size: 14px;
+  line-height: 14px;
+  color: $color-text-light-grey;
+}
+
+.optional__order {
+  font-size: 16px;
+  line-height: 20px;
+  color: $color-white;
+  background-color: $color-green;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    opacity: 0.3;
+    background-color: #5eaa2f;
+  }
+}

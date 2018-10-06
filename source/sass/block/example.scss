@@ -1,0 +1,66 @@
+.example {
+  margin-top: 47px;
+  background-color: $color-light-grey;
+  background-image: url("../img/before-mobile@1x.png");
+  background-position: 0% 80%;
+  background-repeat: no-repeat;
+}
+
+.example__main {
+  padding: 0;
+  padding-top: 33px;
+  padding-left: 20px;
+  margin: 0;
+  font-size: 36px;
+  line-height: 60px;
+  color: $color-text-dark-grey;
+  font-weight: normal;
+}
+
+.example__text {
+  padding: 0;
+  padding-top: 33px;
+  padding-left: 20px;
+  padding-right: 34px;
+  margin: 0;
+  font-family: $custome-font;
+  font-size: 14px;
+  line-height: 18px;
+  color: $color-text-light-grey;
+}
+
+.example__results {
+  padding: 0;
+  margin: 0;
+  padding-top: 27px;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  text-align: center;
+}
+
+.example__results-main {
+  font-size: 24px;
+  line-height: 24px;
+  color: $color-text-dark-grey;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.example__results-text {
+  font-family: $custome-font;
+  font-size: 12px;
+  line-height: 12px;
+  color: $color-text-light-grey;
+}
+
+.example__cost {
+  padding: 0;
+  padding-top: 25px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: $color-text-dark-grey;
+  text-align: center;
+  text-transform: uppercase;
+}

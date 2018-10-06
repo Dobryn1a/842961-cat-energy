@@ -1,0 +1,41 @@
+.cooperation {
+  background-color: $color-white;
+}
+
+.cooperation__info {
+  display: flex;
+}
+
+.cooperation__invite {
+  padding: 0;
+  margin: 0;
+  padding-top: 31px;
+  padding-bottom: 26px;
+  padding-left: 19px;
+  font-size: 16px;
+  line-height: 20px;
+  color: $color-text-dark-grey;
+  text-transform: uppercase;
+}
+
+.cooperation__adress {
+  padding: 0;
+  margin: 0;
+  padding-left: 19px;
+  padding-top: 33px;
+  padding-right: 25px;
+  text-align: left;
+  font-family: $custome-font;
+  font-size: 14px;
+  line-height: 20px;
+  color: $color-text-light-grey;
+}
+
+.cooperation__map {
+  background-color: $color-white;
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  width: 320px;
+  height: 362px;
+}
