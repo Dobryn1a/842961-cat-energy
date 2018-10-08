@@ -1,11 +1,6 @@
-@mixin Oswald ($font-size, $line-height) {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: $font-size;
-  line-height: $line-height;
-}
-
-@mixin Oswald ($font-size, $line-height) {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: $font-size;
-  line-height: $line-height;
+@mixin placeholder {
+  &::-webkit-input-placeholder { @content; }
+  &:-moz-placeholder           { @content; }
+  &::-moz-placeholder          { @content; }
+  &:-ms-input-placeholder      { @content; }
 }

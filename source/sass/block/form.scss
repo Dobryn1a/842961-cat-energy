@@ -32,6 +32,10 @@
   border: 1px solid #e6e6e6;
   text-transform: uppercase;
 
+  @include placeholder {
+    color: $color-text-light-grey;
+  }
+
   &:hover {
     border: 1px solid #cdcdcd;
   }
