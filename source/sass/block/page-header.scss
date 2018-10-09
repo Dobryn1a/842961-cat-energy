@@ -55,3 +55,19 @@
     transform: rotate(45deg);
   }
 }
+
+@media (min-width: $tablet-width) {
+
+  .page-header {
+    display: flex;
+    height: 83px;
+  }
+
+  .page-header__toggle {
+    display: none;
+  }
+
+  .page-nav__list {
+    display: flex;
+  }
+}

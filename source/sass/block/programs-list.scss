@@ -60,3 +60,19 @@
     opacity: 0.3;
   }
 }
+
+
+@media (min-width: $tablet-width) {
+
+}
+
+@media (min-width: $desktop-width) {
+  .programs-list {
+    display: flex;
+  }
+
+  .programs-list__item--slim {
+    margin: 0;
+    margin-right: 20px;
+  }
+}

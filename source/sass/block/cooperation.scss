@@ -44,3 +44,19 @@
 .cooperation__map--iframe {
   border: 0;
 }
+
+@media (min-width: $tablet-width) {
+
+}
+
+@media (min-width: $desktop-width) {
+  .cooperation {
+    position: relative;
+  }
+
+  .cooperation__info {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+  }
+}

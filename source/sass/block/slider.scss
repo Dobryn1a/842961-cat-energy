@@ -1,8 +1,24 @@
 .slider {
   margin-top: 311px;
+  position: relative;
   font-size: 16px;
   line-height: 18px;
   color: $color-text-dark-grey;
+}
+
+.slider__image {
+  position: absolute;
+  top: -280%;
+  left: 0%;
+  width: 311px;
+  height: 232px;
+  background-color: $color-light-grey;
+  background-image: url("../img/before-mobile@1x.png");
+  background-position: 50% 20%;
+  background-repeat: no-repeat;
+}
+
+.slider__wrapper {
   display: flex;
   justify-content: center;
 }
@@ -57,4 +73,13 @@
   height: 6px;
   border-radius: 3px;
   background-color: $color-green;
+}
+
+
+@media (min-width: $tablet-width) {
+
+}
+
+@media (min-width: $desktop-width) {
+
 }
