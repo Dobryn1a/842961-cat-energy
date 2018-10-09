@@ -4,6 +4,14 @@
 
 .programs-list__item--slim {
   margin-bottom: 20px;
+  /*width: 50px;
+  height: 51px;
+  border-radius: 20px;
+  background-color: $color-green;
+  background-image: url("../img/icon-cat-slim.svg");
+  background-position: center 50%;
+  background-repeat: no-repeat;*/
+
 }
 
 .programs-list__main {
@@ -30,16 +38,26 @@
 }
 
 .programs-list__adress {
+  padding: 21px 20px;
+  margin: 0;
   font-size: 16px;
   line-height: 16px;
   color: $color-text-dark-grey;
   text-transform: uppercase;
+  display: block;
+  background-image: url("../img/icon-right-arrow-long.svg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-color: $color-light-grey;
 
   &:hover {
     color: $color-text-dark-grey;
+    background-image: url("../img/icon-right-arrow-verylong.svg");
   }
 
   &:active {
+    background-image: url("../img/icon-right-arrow-verylong.svg");
     color: rgba(17, 17, 17, 0.3);
+    opacity: 0.3;
   }
 }

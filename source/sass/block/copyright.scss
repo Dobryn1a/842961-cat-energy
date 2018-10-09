@@ -17,6 +17,15 @@
   &:nth-child(2) {
     margin-left: 36px;
     margin-right: 40px;
+    align-self: flex-end;
   }
 
+  &:hover {
+    fill:#68b738;
+  }
+
+  &:active {
+    fill:#68b738;
+    opacity: 0.3;
+  }
 }

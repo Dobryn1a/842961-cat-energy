@@ -7,4 +7,12 @@
   margin: 0 96px;
   margin-bottom: 31px;
   margin-top: 39px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
