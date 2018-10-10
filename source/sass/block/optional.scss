@@ -35,3 +35,25 @@
     background-color: #5eaa2f;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .optional__item {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .optional__main {
+    width: 360px;
+  }
+
+  .optional__table {
+    width: 360px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-catalog__wrapper {
+    display: flex;
+  }
+}
+

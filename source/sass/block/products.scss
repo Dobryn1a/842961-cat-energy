@@ -13,3 +13,27 @@
 .products__list {
   list-style: none;
 }
+
+@media (min-width: $tablet-width) {
+  .products__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .products__list-item {
+    width: 340px;
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .products__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .products__list-item {
+    width: 250px;
+    margin-right: 20px;
+  }
+}

@@ -20,6 +20,8 @@
 }
 
 .form__label--target {
+  display: block;
+
   &:active {
     opacity: 0.3;
   }
@@ -80,4 +82,33 @@
   font-size: 14px;
   line-height: 16px;
   color: $color-text-light-grey;
+}
+
+@media (min-width: $tablet-width) {
+  .form__section--target {
+    display: block;
+  }
+
+  .form__section--optional-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form__label--checkbox {
+    width: 300px;
+  }
+
+  .form__section-wrapper {
+    display: flex;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-form__wrapper {
+    display: flex;
+  }
+
+  .form__section--contact-list {
+    display: flex;
+  }
 }
