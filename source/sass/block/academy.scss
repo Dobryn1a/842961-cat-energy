@@ -35,3 +35,15 @@
     opacity: 0.3;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .academy__item {
+    margin: 0;
+    padding: 0;
+  }
+
+  .academy__logo {
+    margin: 0;
+    padding: 0;
+  }
+}

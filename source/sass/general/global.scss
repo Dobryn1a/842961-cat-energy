@@ -36,6 +36,23 @@ input[type="radio"] .visually-hidden {
 }
 
 .conteiner {
+  width: 320px;
   padding: 0;
   margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .conteiner {
+    width: 768px;
+    padding: 0;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .conteiner {
+    width: 1300px;
+    padding: 0;
+    margin: 0 auto;
+  }
 }
