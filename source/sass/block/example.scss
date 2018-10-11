@@ -1,9 +1,6 @@
 .example {
   margin-top: 47px;
   background-color: $color-light-grey;
-  background-image: url("../img/before-mobile@1x.png");
-  background-position: 0% 80%;
-  background-repeat: no-repeat;
 }
 
 .example__main {
@@ -63,4 +60,24 @@
   color: $color-text-dark-grey;
   text-align: center;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .example__conteiner {
+    display: flex;
+  }
+
+  .example__wrapper {
+    padding: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example {
+    display: flex;
+  }
+
+  .example__conteiner {
+    display: block;
+  }
 }

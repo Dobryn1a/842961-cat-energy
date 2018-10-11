@@ -50,3 +50,44 @@
     background-color: #5eaa2f;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .intro {
+    height: 900px;
+    position: relative;
+    background-image: url("../../img/index-can-tablet@1x.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    text-align: center;
+  }
+
+  .intro__main,
+  .intro__text {
+    color: $color-black;
+  }
+
+  .intro__image {
+    display: none;
+  }
+
+  .intro__form {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro {
+    position: relative;
+    background-image: url("../../img/index-can-desktop@1x.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    text-align: center;
+  }
+
+
+  .intro__image {
+    display: none;
+  }
+}
