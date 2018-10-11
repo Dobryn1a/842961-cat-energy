@@ -4,6 +4,12 @@
 }
 
 .products__main {
+  margin: 0;
+  padding: 0;
+  padding-top: 31px;
+  padding-bottom: 35px;
+  padding-left: 22px;
+  padding-right: 10px;
   font-size: 36px;
   line-height: 60px;
   color: $color-text-dark-grey;
@@ -12,6 +18,8 @@
 
 .products__list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 @media (min-width: $tablet-width) {

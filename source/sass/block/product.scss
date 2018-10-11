@@ -1,9 +1,25 @@
 .product {
   padding: 0;
   margin: 0;
+  border: 1px solid #ededed;
+}
+
+.product__wrapper {
+  display: flex;
+}
+
+.product__image {
+  padding: 0;
+  padding-left: 20px;
+  margin: 0;
 }
 
 .product__main {
+  display: block;
+  padding: 0;
+  padding-top: 15px;
+  padding-right: 85px;
+  margin: 0;
   font-size: 16px;
   line-height: 20px;
   color: $color-text-dark-grey;
@@ -11,10 +27,18 @@
 }
 
 .product__description {
+  padding: 0;
+  padding-top: 18px;
+  margin: 0;
   font-family: $custome-font;
   font-size: 12px;
   line-height: 16px;
   color: $color-text-light-grey;
+}
+
+.product__name {
+  padding-right: 65px;
+  text-align: left;
 }
 
 .product__size {
@@ -22,6 +46,15 @@
 }
 
 .product__order {
+  display: block;
+  width: 280px;
+  height: 40px;
+  text-align: center;
+  padding: 0;
+  padding-top: 11px;
+  margin: 0;
+  margin-left: 20px;
+  margin-bottom: 25px;
   font-size: 16px;
   line-height: 20px;
   color: $color-white;

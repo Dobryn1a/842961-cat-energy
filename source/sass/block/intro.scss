@@ -52,14 +52,8 @@
 }
 
 @media (min-width: $tablet-width) {
-  .intro {
-    height: 900px;
-    position: relative;
-    background-image: url("../../img/index-can-tablet@1x.jpg");
-    background-position: top;
-    background-repeat: no-repeat;
-    text-align: center;
-  }
+  /*.intro {
+  }*/
 
   .intro__main,
   .intro__text {
@@ -70,22 +64,14 @@
     display: none;
   }
 
-  .intro__form {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
+  /*.intro__form {
+  }*/
 }
 
 @media (min-width: $desktop-width) {
-  .intro {
-    position: relative;
-    background-image: url("../../img/index-can-desktop@1x.png");
-    background-position: top;
-    background-repeat: no-repeat;
-    text-align: center;
-  }
 
+  /*.intro {
+  }*/
 
   .intro__image {
     display: none;
