@@ -22,6 +22,25 @@
   padding: 0;
 }
 
+.products-optional__main {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  padding-top: 31px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #cdcdcd;
+
+  &::after {
+    position: absolute;
+    top: 52%;
+    right: -7%;
+    content: "";
+    width: 53px;
+    height: 3px;
+    background-color: $color-green;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .products__list {
     display: flex;

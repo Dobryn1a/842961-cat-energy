@@ -1,17 +1,43 @@
 .show-more {
   padding: 0;
   margin: 0;
+  border: 1px solid #ededed;
+  text-align: center;
 }
 
 .show-more__main {
+  position: relative;
+  padding: 0;
+  padding-top: 83px;
+  margin: 0;
   font-size: 16px;
   line-height: 20px;
   color: $color-text-dark-grey;
   text-transform: uppercase;
   font-weight: normal;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 40%;
+    left: 46%;
+    width: 31px;
+    height: 2px;
+    opacity: 0.2;
+    background-color: $color-text-medium-grey;
+  }
+
+  &::before {
+    transform: rotate(90deg);
+  }
 }
 
 .show-more__text {
+  padding: 0;
+  padding-top: 11px;
+  padding-bottom: 22px;
+  margin: 0;
   font-family: $custome-font;
   font-size: 12px;
   line-height: 16px;
@@ -19,11 +45,18 @@
 }
 
 .show-more__button {
+  display: block;
+  padding-top: 9px;
+  margin: 0 20px;
+  margin-bottom: 25px;
+  width: 280px;
+  height: 40px;
   font-size: 16px;
   line-height: 20px;
   color: $color-text-light-grey;
   background-color: $color-light-grey;
   text-transform: uppercase;
+  text-align: center;
 
   &:hover {
     background-color: #ebebeb;
