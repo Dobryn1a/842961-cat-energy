@@ -37,21 +37,21 @@
           <p class="form__info-text">Заполните анкету и мы подберем программу питания для вашего кота</p>
           <div class="form__wrapper">
             <section class="form__section form__section--info">
-              <p class="form__row">
-                <label class="form__label" for="info-row-it">ИМЯ:*</label>
-                <input class="form__input" id="info-row-it" type="text" name="name" value="" placeholder="Барсик">
+              <p class="form__row form__row--name">
+                <label class="form__label form__label--name" for="info-row-it">ИМЯ:*</label>
+                <input class="form__input form__input--name" id="info-row-it" type="text" name="name" value="" placeholder="Барсик">
               </p>
-              <p class="form__row">
-                <label class="form__label" for="info-row-it">ВЕС (КГ):*</label>
-                <input class="form__input" id="info-row-it" type="text" name="weight" value="" placeholder="7">
+              <p class="form__row form__row--wheight">
+                <label class="form__label form__label--wheight" for="info-row-it">ВЕС (КГ):*</label>
+                <input class="form__input form__input--wheight" id="info-row-it" type="text" name="weight" value="" placeholder="7">
               </p>
-              <p class="form__info-row">
-                <label class="form__label" for="info-row-it">ВОЗРАСТ (ЛЕТ):</label>
-                <input class="form__input" id="info-row-it" type="text" name="age" value="" placeholder="7">
+              <p class="form__row form__row--age">
+                <label class="form__label form__label--age" for="info-row-it">ВОЗРАСТ (ЛЕТ):</label>
+                <input class="form__input form__input--age" id="info-row-it" type="text" name="age" value="" placeholder="7">
               </p>
             </section>
             <section class="form__section form__section--target">
-              <label class="form__label form__label--target">
+              <label class="form__label form__label--target form__label--child-first">
                 <input class="form__radio visually-hidden" type="radio" name="slim" value="" checked>
                 <span class="form__radio-indicator form__radio-indicator--checked"></span>
                 Похудение
@@ -61,7 +61,7 @@
                 <span class="form__radio-indicator"></span>
                 Набор массы
               </label>
-              <label class="form__label form__label--target">
+              <label class="form__label form__label--target form__label--child-last">
                 <input class="form__radio visually-hidden" type="radio" name="help" value="">
                 <span class="form__radio-indicator"></span>
                 Не знаю (нужен ваш совет)
@@ -72,12 +72,12 @@
             <h3 class="form__main">Контактные данные (владельца кота)</h3>
             <div class="form__section--contact-list">
               <p class="form__contact-item">
-                <label class="form__label" for="email">Email:*</label>
-                <input class="form__input" id="email" type="email" name="email" value="" placeholder="kuklachev@gmail.com">
+                <label class="form__label form__label--contact-list" for="email">Email:*</label>
+                <input class="form__input form__label--contact-list" id="email" type="email" name="email" value="" placeholder="kuklachev@gmail.com">
               </p>
               <p class="form__contact-item">
-                <label class="form__label" for="phone">Телефон:*</label>
-                <input class="form__input" id="phone" type="tel" name="phone" value="" placeholder="8 (960) 900-60-90">
+                <label class="form__label form__label--contact-list" for="phone">Телефон:*</label>
+                <input class="form__input form__label--contact-list" id="phone" type="tel" name="phone" value="" placeholder="8 (960) 900-60-90">
               </p>
             </div>
           </section>

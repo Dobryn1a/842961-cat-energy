@@ -1,4 +1,7 @@
 .form__info-main {
+  padding: 0 20px;
+  padding-top: 30px;
+  margin: 0;
   font-size: 36px;
   line-height: 60px;
   color: $color-text-dark-grey;
@@ -6,21 +9,110 @@
 }
 
 .form__info-text {
+  padding: 0 20px;
+  padding-top: 35px;
+  padding-right: 74px;
+  padding-bottom: 39px;
+  margin: 0;
   font-size: 14px;
   line-height: 18px;
   color: $color-text-dark-grey;
   text-transform: uppercase;
 }
 
+
+.form__row {
+  padding: 0;
+  padding-bottom: 14px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
 .form__label {
+  padding: 0;
+  padding-right: 16px;
+  margin: 0;
   font-size: 16px;
   line-height: 18px;
   color: $color-text-medium-grey;
   text-transform: uppercase;
 }
 
+.form__section--target {
+  border: solid 1px #ededed;
+}
+
 .form__label--target {
+  margin: 13px 0;
+  margin-left: 19px;
+  margin-right: 19px;
+  padding: 0;
+  padding-left: 46px;
   display: block;
+  position: relative;
+  cursor: pointer;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.form__label--child-first {
+  margin-top: 29px;
+}
+
+
+.form__label--child-last {
+  margin-bottom: 25px;
+}
+
+.form__label--target input[type=radio] + .form__radio-indicator {
+  position: absolute;
+  top: -25%;
+  left: 0%;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: solid 1px #cdcdcd;
+  border-radius: 20px;
+
+  &:hover {
+    border: 1px solid #bababa;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.form__label--target input[type=radio]:checked + .form__radio-indicator {
+  content: "";
+  position: absolute;
+  top: -25%;
+  left: 0%;
+  width: 30px;
+  height: 30px;
+  border: solid 1px #cdcdcd;
+  border-radius: 20px;
+
+  &::after {
+    position: absolute;
+    top: 29%;
+    left: 29%;
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-color: $color-green;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 20px;
+  }
+
+  &:hover {
+    border: 1px solid #bababa;
+  }
 
   &:active {
     opacity: 0.3;
@@ -28,7 +120,10 @@
 }
 
 .form__input {
-  padding: 0;
+  width: 100%;
+  padding: 15px 0;
+  padding-left: 16px;
+  padding-right: 5px;
   margin: 0;
   font-size: 16px;
   line-height: 18px;
@@ -49,11 +144,46 @@
   }
 }
 
+/*.form__label--age {
+}*/
+
+.form__section {
+  padding: 0 20px;
+  margin: 0;
+}
+
 .form__main {
+  padding: 0;
+  padding-top: 31px;
+  padding-right: 80px;
+  margin: 0;
   font-size: 24px;
   line-height: 24px;
   color: $color-text-dark-grey;
   font-weight: normal;
+}
+
+.form__section--contact {
+  padding: 0 20px;
+  margin: 0;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    top: 21%;
+    right: 0%;
+    content: "";
+    width: 99px;
+    height: 3px;
+    background-color: $color-green;
+  }
+}
+
+.form__contact-item {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
 }
 
 .form__comment--input {
