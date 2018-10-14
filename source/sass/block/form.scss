@@ -144,9 +144,6 @@
   }
 }
 
-/*.form__label--age {
-}*/
-
 .form__section {
   padding: 0 20px;
   margin: 0;
@@ -273,8 +270,63 @@
   }
 }
 
-.form__section--optional-wrapper {
+.form__label--checkbox {
   display: block;
+  margin: 0;
+  padding: 0;
+  padding-left: 46px;
+  padding-bottom: 27px;
+  position: relative;
+}
+
+.form__label--checkbox .form__checkbox + .form__checkbox-indicator {
+  position: absolute;
+  top: -12%;
+  left: 0%;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: solid 1px #cdcdcd;
+
+  &:hover {
+    border: 1px solid #bababa;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.form__label--checkbox .form__checkbox:checked + .form__checkbox-indicator {
+  content: "";
+  position: absolute;
+  top: -12%;
+  left: 0%;
+  width: 30px;
+  height: 30px;
+  border: solid 1px #cdcdcd;
+
+  &::after {
+    position: absolute;
+    top: 15%;
+    left: 16%;
+    content: "";
+    width: 22px;
+    height: 17px;
+    background-image: url("../img/icon-tick.svg");
+    fill: $color-green;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+  }
+
+  &:hover {
+    border: 1px solid #bababa;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .form__section-wrapper {
