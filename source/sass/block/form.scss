@@ -156,6 +156,7 @@
   padding: 0;
   padding-top: 31px;
   padding-right: 80px;
+  padding-bottom: 30px;
   margin: 0;
   font-size: 24px;
   line-height: 24px;
@@ -170,7 +171,7 @@
 
   &::after {
     position: absolute;
-    top: 21%;
+    top: 26%;
     right: 0%;
     content: "";
     width: 99px;
@@ -181,18 +182,113 @@
 
 .form__contact-item {
   padding: 0;
+  padding-bottom: 14px;
   margin: 0;
   display: flex;
   align-items: center;
+  position: relative;
+}
+
+.form__input--contact-list {
+  padding-right: 40px;
+  margin: 0;
+}
+
+.form__button {
+  margin: 0;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 25%;
+  left: 88%;
+  background-color: transparent;
+  fill: $color-text-medium-grey;
+  border: 0
+}
+
+.form__section--comment {
+  margin: 0;
+  padding: 0 20px;
+}
+
+.form__main--comment {
+  margin: 0;
+  padding: 31px 0;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    top: 50%;
+    right: -7%;
+    content: "";
+    width: 158px;
+    height: 3px;
+    background-color: $color-green;
+  }
 }
 
 .form__comment--input {
+  min-width: 280px;
+  min-height: 150px;
+  padding: 10px 13px;
+  padding-top: 15px;
   font-size: 16px;
   line-height: 18px;
   color: $color-text-light-grey;
+  text-transform: uppercase;
+
+  @include placeholder {
+    color: $color-text-light-grey;
+    text-align: center;
+  }
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:active {
+    border: 2px solid $color-text-light-grey;
+  }
+}
+
+.form__section--optional {
+  margin: 0;
+  padding: 0 20px;
+}
+
+.form__main--optional {
+  margin: 0;
+  padding: 31px 0;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    top: 50%;
+    right: -7%;
+    content: "";
+    width: 136px;
+    height: 3px;
+    background-color: $color-green;
+  }
+}
+
+.form__section--optional-wrapper {
+  display: block;
+}
+
+.form__section-wrapper {
+  margin: 0;
+  padding: 0 20px;
+  padding-top: 43px;
+  text-align: center;
 }
 
 .form__send-order {
+  display: block;
+  width: 280px;
+  height: 40px;
+  padding-top: 11px;
   font-size: 14px;
   line-height: 18px;
   color: $color-white;
@@ -210,6 +306,11 @@
 }
 
 .form__text {
+  margin: 0;
+  padding: 0;
+  padding-top: 23px;
+  padding-bottom: 34px;
+  text-align: center;
   font-family: $custome-font;
   font-size: 14px;
   line-height: 16px;
