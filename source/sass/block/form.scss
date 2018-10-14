@@ -67,7 +67,7 @@
   margin-bottom: 25px;
 }
 
-.form__label--target input[type=radio] + .form__radio-indicator {
+.form__label--target .form__radio + .form__radio-indicator {
   position: absolute;
   top: -25%;
   left: 0%;
@@ -86,7 +86,7 @@
   }
 }
 
-.form__label--target input[type=radio]:checked + .form__radio-indicator {
+.form__label--target .form__radio:checked + .form__radio-indicator {
   content: "";
   position: absolute;
   top: -25%;
@@ -204,7 +204,7 @@
   left: 88%;
   background-color: transparent;
   fill: $color-text-medium-grey;
-  border: 0
+  border: 0;
 }
 
 .form__section--comment {
