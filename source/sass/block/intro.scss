@@ -1,4 +1,5 @@
 .intro {
+  padding: 0 20px;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-position: top;
   background-repeat: no-repeat;
@@ -7,7 +8,7 @@
 
 .intro__main {
   padding: 0;
-  padding-top: 29px;
+  padding-top: 28px;
   margin: 0;
   font-size: 36px;
   line-height: 36px;
@@ -18,7 +19,7 @@
 .intro__text {
   padding: 0;
   margin: 0;
-  padding-top: 19px;
+  padding-top: 25px;
   font-size: 14px;
   line-height: 14px;
   color: $color-white;
@@ -27,19 +28,19 @@
 
 .intro__image {
   margin-top: 29px;
-  margin-bottom: 20px;
 }
 
 .intro__form {
-  padding-top: 14px;
-  padding-bottom: 14px;
-  padding-left: 73px;
-  padding-right: 73px;
+  display: block;
+  min-width: 280px;
+  min-height: 40px;
+  padding: 11px;
   font-size: 14px;
   line-height: 18px;
   color: $color-white;
   background-color: $color-green;
   text-transform: uppercase;
+  text-align: center;
 
   &:hover {
     background-color: #5eaa2f;

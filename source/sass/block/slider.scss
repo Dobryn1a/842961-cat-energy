@@ -1,11 +1,11 @@
 .slider {
-  padding-top: 311px;
+  padding-top: 305px;
   font-size: 16px;
   line-height: 18px;
   color: $color-text-dark-grey;
   background-color: $color-light-grey;
   background-image: url("../img/before-mobile@1x.png");
-  background-position: 50% 30%;
+  background-position: 50% 26%;
   background-repeat: no-repeat;
 }
 
@@ -17,8 +17,7 @@
 .slider__item {
   padding: 0;
   margin: 0;
-  margin-top: 35px;
-  margin-bottom: 38px;
+  margin-bottom: 36px;
   text-transform: uppercase;
   border: none;
   background-color: $color-light-grey;
@@ -45,8 +44,7 @@
   position: relative;
   padding: 0;
   margin: 0;
-  margin-top: 35px;
-  margin-bottom: 39px;
+  margin-top: 3px;
   width: 84px;
   height: 14px;
   border-radius: 6px;

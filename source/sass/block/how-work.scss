@@ -1,3 +1,8 @@
+.how-work {
+  margin: 0;
+  padding: 0 20px;
+}
+
 .how-work__list {
   padding: 0;
   margin: 0;
@@ -6,8 +11,7 @@
 
 .how-work__main {
   padding: 0;
-  padding-top: 32px;
-  padding-left: 22px;
+  padding-top: 20px;
   margin: 0;
   font-size: 36px;
   line-height: 60px;
@@ -23,9 +27,9 @@
 
 .how-work__text {
   padding: 0;
-  padding-top: 41px;
-  padding-left: 100px;
-  padding-right: 26px;
+  padding-top: 29px;
+  padding-left: 80px;
+  padding-right: 6px;
   margin: 0;
   font-family: $custome-font;
   font-size: 14px;
@@ -33,11 +37,19 @@
   color: $color-text-light-grey;
 }
 
+.how-work__text--change {
+  padding-top: 23px;
+}
+
+.how-work__text--month {
+  padding-top: 26px;
+}
+
 .how-work__item--page {
   content: "";
   position: absolute;
-  top: 42%;
-  left: 7%;
+  top: 30%;
+  left: 0%;
   width: 60px;
   height: 60px;
   background-color: $color-green;
@@ -49,8 +61,8 @@
 .how-work__item--flour {
   content: "";
   position: absolute;
-  top: 42%;
-  left: 7%;
+  top: 29%;
+  left: 0%;
   width: 60px;
   height: 60px;
   background-color: $color-green;
@@ -62,8 +74,8 @@
 .how-work__item--change {
   content: "";
   position: absolute;
-  top: 42%;
-  left: 7%;
+  top: 26%;
+  left: 0%;
   width: 60px;
   height: 60px;
   background-color: $color-green;
@@ -75,8 +87,8 @@
 .how-work__item--month {
   content: "";
   position: absolute;
-  top: 42%;
-  left: 7%;
+  top: 29%;
+  left: 0%;
   width: 60px;
   height: 60px;
   background-color: $color-green;

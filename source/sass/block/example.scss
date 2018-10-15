@@ -1,12 +1,13 @@
 .example {
+  padding: 0 20px;
+  margin: 0;
   margin-top: 47px;
   background-color: $color-light-grey;
 }
 
 .example__main {
   padding: 0;
-  padding-top: 33px;
-  padding-left: 20px;
+  padding-top: 15px;
   margin: 0;
   font-size: 36px;
   line-height: 60px;
@@ -16,9 +17,8 @@
 
 .example__text {
   padding: 0;
-  padding-top: 33px;
-  padding-left: 20px;
-  padding-right: 34px;
+  padding-top: 24px;
+  padding-right: 14px;
   margin: 0;
   font-family: $custome-font;
   font-size: 14px;
@@ -29,9 +29,9 @@
 .example__results {
   padding: 0;
   margin: 0;
-  padding-top: 27px;
+  padding-top: 25px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   list-style: none;
   text-align: center;
 }
@@ -59,7 +59,7 @@
 
 .example__results-text {
   position: absolute;
-  top: 80%;
+  top: 84%;
   left: 0%;
   padding: 0;
   margin: 0 21px;
@@ -72,7 +72,7 @@
 
 .example__cost {
   padding: 0;
-  padding-top: 25px;
+  padding-top: 35px;
   margin: 0;
   font-size: 14px;
   line-height: 20px;
