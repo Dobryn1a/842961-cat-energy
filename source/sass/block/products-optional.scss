@@ -14,3 +14,22 @@
   padding: 0 20px;
   margin: 0;
 }
+
+.products-optional__main {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  padding-top: 27px;
+  padding-bottom: 34px;
+  border-bottom: 1px solid #cdcdcd;
+
+  &::after {
+    position: absolute;
+    top: 48%;
+    right: -7%;
+    content: "";
+    width: 53px;
+    height: 3px;
+    background-color: $color-green;
+  }
+}

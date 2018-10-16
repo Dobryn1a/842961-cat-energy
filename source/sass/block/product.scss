@@ -1,5 +1,5 @@
 .product {
-  padding: 0 19px 25px 19px;
+  padding: 0 19px 23px 19px;
   border: 1px solid #ededed;
 }
 
@@ -8,9 +8,10 @@
 }
 
 .product__image {
-  width: 206px;
+  width: 140px;
   height: 144px;
   vertical-align: bottom;
+  flex-shrink: 0;
 }
 
 .product__main {
