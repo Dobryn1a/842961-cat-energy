@@ -82,8 +82,79 @@
 }
 
 @media (min-width: $tablet-width) {
+  .example {
+    padding: 0 30px;
+    margin: 0;
+    background-color: $color-white;
+  }
+
+  .example__main {
+    padding: 0;
+    padding-top: 51px;
+    margin: 0;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .example__results-item {
+    margin-right: 42px;
+    position: relative;
+  }
+
+  .example__text {
+    padding: 0;
+    padding-top: 60px;
+    margin: 0;
+    font-family: $custome-font;
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-text-light-grey;
+  }
+
+  .example__results-main {
+    width: 162px;
+    height: 72px;
+    padding: 0;
+    padding-top: 17px;
+    margin: 0;
+    font-size: 30px;
+    line-height: 37px;
+    border-radius: 3px;
+    border: solid 1px #cdcdcd;
+  }
+
+  .example__results {
+    padding: 0;
+  }
+
+  .example__results-text {
+    position: absolute;
+    top: 87%;
+    left: 6%;
+    width: 142px;
+    height: 27px;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: $color-white;
+  }
+
+  .example__cost {
+    padding: 0;
+    padding-top: 11px;
+    padding-left: 45px;
+    margin: 0;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: right;
+  }
+
   .example__conteiner {
+    padding-top: 56px;
+    padding-bottom: 255px;
     display: flex;
+    justify-content: space-between;
   }
 
   .example__wrapper {

@@ -58,8 +58,18 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
+    padding: 0 30px;
     display: flex;
-    height: 83px;
+    justify-content: space-between;
+  }
+
+  .page-header__wrapper {
+    border: none;
+  }
+
+  .page-header__logo {
+    padding: 0;
+    padding-top: 24px;
   }
 
   .page-header__toggle {

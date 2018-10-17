@@ -32,8 +32,8 @@
 
 .intro__form {
   display: block;
-  min-width: 280px;
-  min-height: 40px;
+  width: 280px;
+  height: 40px;
   padding: 11px;
   font-size: 14px;
   line-height: 18px;
@@ -53,28 +53,60 @@
 }
 
 @media (min-width: $tablet-width) {
-  /*.intro {
-  }*/
+  .intro {
+    padding: 0 30px;
+    background-image: none;
+    text-align: left;
+    position: relative;
+  }
 
   .intro__main,
   .intro__text {
-    color: $color-black;
+    color: $color-text-dark-grey;
+  }
+
+  .intro__main {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: normal;
+    padding-top: 61px;
+    padding-left: 90px;
+    padding-right: 200px;
+  }
+
+  .intro__text {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: normal;
+    padding-top: 33px;
+    padding-left: 90px;
+    padding-right: 200px;
   }
 
   .intro__image {
-    display: none;
+    width: 709px;
+    height: 609px;
+    margin-top: 20px;
   }
 
-  /*.intro__form {
-  }*/
+  .intro__form {
+    position: absolute;
+    top: 31%;
+    left: 15%;
+    width: 245px;
+    height: 52px;
+    padding: 15px;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 @media (min-width: $desktop-width) {
 
   /*.intro {
-  }*/
+  }
 
   .intro__image {
     display: none;
-  }
+  }*/
 }

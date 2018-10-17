@@ -89,9 +89,81 @@
 }
 
 
-/*@media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
+  .programs-list__item  {
+    padding-top: 81px;
+    padding-left: 55px;
+    padding-bottom: 62px;
+    padding-right: 270px;
+  }
 
-}*/
+  .programs-list__main {
+    padding: 0;
+    padding-bottom: 26px;
+    margin: 0;
+    font-size: 24px;
+    line-height: 37px;
+    font-weight: normal;
+  }
+
+  .programs-list__text {
+    padding: 0;
+    padding-bottom: 61px;
+    margin: 0;
+    font-family: $custome-font;
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+  }
+
+  .programs-list__item--slim {
+    margin-bottom: 30px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 22%;
+      left: 66%;
+      width: 200px;
+      height: 200px;
+      border-radius: 100px;
+      background-color: $color-green;
+      background-image: url("../img/icon-cat-slim.svg");
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .programs-list__item--pro {
+    padding-right: 310px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 22%;
+      left: 66%;
+      width: 200px;
+      height: 200px;
+      border-radius: 100px;
+      background-color: $color-green;
+      background-image: url("../img/icon-cat-pro.svg");
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .programs-list__adress {
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    line-height: 20px;
+    background-image: url("../img/icon-right-arrow-long.svg");
+    background-position: 35% 48%;
+    background-color: $color-light-grey;
+  }
+}
 
 @media (min-width: $desktop-width) {
   .programs-list {

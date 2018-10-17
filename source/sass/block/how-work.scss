@@ -98,13 +98,32 @@
 }
 
 @media (min-width: $tablet-width) {
+  .how-work {
+    margin: 0;
+    padding: 0 30px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
   .how-work__list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .how-work__main {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+
+  .how-work__text {
+    font-family: $custome-font;
+    font-size: 16px;
+    line-height: 24px;
   }
 
   .how-work__item {
-    width: 300px;
+    text-align: left;
   }
 }
 
