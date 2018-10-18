@@ -67,16 +67,35 @@
 
 @media (min-width: $tablet-width) {
   .optional__item {
+    border: 0.5px solid #cdcdcd;
+    padding: 28px 37px 28px 37px;
+  }
+
+  .optional__conteiner {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 26px;
   }
 
   .optional__main {
-    width: 360px;
+    padding: 0;
+    padding-right: 246px;
+    margin: 0;
+    font-size: 20px;
+    line-height: 20px;;
   }
 
   .optional__table {
-    width: 360px;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .optional__order {
+    margin: 0;
+    width: 100%;
   }
 }
 

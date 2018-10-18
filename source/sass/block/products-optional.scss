@@ -33,3 +33,38 @@
     background-color: $color-green;
   }
 }
+
+@media (min-width: $tablet-width)  {
+  .products-optional__wrapper {
+    padding: 0 30px;
+    margin: 0;
+  }
+
+  .products-optional__main {
+    position: relative;
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0;
+    padding: 0;
+    padding-left: 37px;
+    padding-bottom: 75px;
+    border: none;
+
+    &::after {
+      top: 50%;
+      right: -3%;
+      width: 327px;
+      height: 3px;
+    }
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: -5%;
+      content: "";
+      width: 28px;
+      height: 3px;
+      background-color: $color-green;
+    }
+  }
+}
