@@ -37,9 +37,16 @@
 }
 
 @media (min-width: $tablet-width) {
+  .academy {
+    margin: 0;
+    padding: 0;
+  }
+
   .academy__item {
     margin: 0;
     padding: 0;
+    padding-right: 23px;
+    padding-top: 9px;
   }
 
   .academy__logo {

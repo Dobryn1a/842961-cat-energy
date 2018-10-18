@@ -23,16 +23,18 @@
     padding: 0;
   }
 
-  .page-footer__logo {
-    margin: 0;
-    padding: 0;
-  }
-
   .page-footer__wrapper {
-    padding: 20px;
+    padding: 0 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .page-footer__logo {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 62px;
+    padding-top: 61px;
   }
 }
 

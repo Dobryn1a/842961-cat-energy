@@ -21,14 +21,26 @@
 }
 
 @media (min-width: $tablet-width) {
+  .products__main {
+    margin: 0;
+    padding: 0 30px;
+    padding-top: 66px;
+    padding-bottom: 156px;
+    font-size: 60px;
+    line-height: 60px;
+    color: $color-text-dark-grey;
+    font-weight: normal;
+  }
+
   .products__list {
+    padding: 0 30px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .products__list-item {
-    width: 340px;
-    margin-right: 20px;
+    margin-bottom: 140px;
   }
 }
 

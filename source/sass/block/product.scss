@@ -57,3 +57,52 @@
   background-color: $color-green;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .product {
+    padding: 165px 25px 40px 25px;
+    border: none;
+    background-color: $color-light-grey;
+    position: relative;
+    text-align: center;
+  }
+
+  .product__wrapper {
+    display: block;
+  }
+
+  .product__image {
+    position: absolute;
+    top: -22%;
+    left: 29%;
+    width: 195px;
+    height: 208px;
+    vertical-align: bottom;
+  }
+
+  .product__main {
+    padding: 0 60px;
+    padding-bottom: 28px;
+    margin: 0;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .product__description {
+    margin: 0;
+    font-family: $custome-font;
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 33px;
+  }
+
+  .product__name,
+  .product__size {
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+
+  .product__description tr {
+    border-bottom: 1px solid #cdcdcd;
+  }
+}

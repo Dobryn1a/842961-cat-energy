@@ -70,10 +70,19 @@
     padding-top: 369px;
     font-size: 20px;
     line-height: 20px;
-    background-color: $color-light-grey;
+    position: relative;
+  }
+
+  .slider__image {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-color: transparent;
     background-image: url("../img/before-mobile@1x.png");
-    background-position: 50% 26%;
+    background-position: 50% 50%;
     background-repeat: no-repeat;
+    z-index: 2;
   }
 
   .slider__item {
@@ -96,7 +105,7 @@
   .slider__toggle {
     position: absolute;
     top: -230%;
-    left: 42%;
+    left: 47%;
     font-size: 0;
     width: 34px;
     height: 34px;
