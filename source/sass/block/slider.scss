@@ -70,19 +70,7 @@
     padding-top: 369px;
     font-size: 20px;
     line-height: 20px;
-    position: relative;
-  }
-
-  .slider__image {
-    content: "";
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    background-color: transparent;
-    background-image: url("../img/before-mobile@1x.png");
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    z-index: 2;
+    background-image: none;
   }
 
   .slider__item {
@@ -115,6 +103,10 @@
     background-color: $color-white;
 
     &::after {
+      content: "";
+      position: absolute;
+      top: 35%;
+      left: 38%;
       width: 8px;
       height: 8px;
       border-radius: 8px;

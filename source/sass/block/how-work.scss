@@ -108,22 +108,70 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    counter-reset: myCounter;
   }
 
   .how-work__main {
     font-size: 60px;
     line-height: 60px;
+    padding-bottom: 63px;
   }
 
-
   .how-work__text {
+    padding: 0;
+    padding-top: 117px;
+    padding-bottom: 48px;
     font-family: $custome-font;
     font-size: 16px;
     line-height: 24px;
+    position: relative;
+    z-index: 2;
   }
 
   .how-work__item {
+    width: 350px;
+    min-height: 340px;
+    padding-right: 125px;
     text-align: left;
+    &::before {
+      position: absolute;
+      top: -11%;
+      left: 33%;
+      z-index: 1;
+      counter-increment: myCounter;
+      content:counter(myCounter);
+      font-size: 281px;
+      line-height: 281px;
+      color: $color-light-grey;
+    }
+  }
+
+  .how-work__item--page {
+    top: 0%;
+    left: 0%;
+    width: 80px;
+    height: 80px;
+  }
+
+  .how-work__item--flour {
+    top: 0%;
+    left: 0%;
+    width: 80px;
+    height: 80px;
+  }
+
+  .how-work__item--change {
+    top: 0%;
+    left: 0%;
+    width: 80px;
+    height: 80px;
+  }
+
+  .how-work__item--month {
+    top: 0%;
+    left: 0%;
+    width: 80px;
+    height: 80px;
   }
 }
 

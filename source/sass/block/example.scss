@@ -83,8 +83,17 @@
 
 @media (min-width: $tablet-width) {
   .example {
-    padding: 0 30px;
+    padding: 0;
     margin: 0;
+    content: "";
+    background-color: transparent;
+    background-image: url("../img/before-tablet@1x.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+  .example__wrapper {
+    padding: 0 30px;
     background-color: $color-white;
   }
 
