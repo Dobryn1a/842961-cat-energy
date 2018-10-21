@@ -99,7 +99,7 @@
 
   .example__main {
     padding: 0;
-    padding-top: 51px;
+    padding-top: 12px;
     margin: 0;
     font-size: 60px;
     line-height: 60px;
@@ -112,7 +112,8 @@
 
   .example__text {
     padding: 0;
-    padding-top: 60px;
+    padding-top: 64px;
+    padding-right: 6px;
     margin: 0;
     font-family: $custome-font;
     font-size: 16px;
@@ -138,7 +139,7 @@
 
   .example__results-text {
     position: absolute;
-    top: 87%;
+    top: 89%;
     left: 6%;
     width: 142px;
     height: 27px;
@@ -151,17 +152,17 @@
 
   .example__cost {
     padding: 0;
-    padding-top: 11px;
-    padding-left: 45px;
+    padding-top: 9px;
+    padding-left: 108px;
     margin: 0;
     font-size: 20px;
-    line-height: 20px;
+    line-height: 28px;
     text-align: right;
   }
 
   .example__conteiner {
-    padding-top: 56px;
-    padding-bottom: 255px;
+    padding-top: 52px;
+    padding-bottom: 226px;
     display: flex;
     justify-content: space-between;
   }

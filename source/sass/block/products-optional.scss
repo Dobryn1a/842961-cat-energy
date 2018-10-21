@@ -47,22 +47,22 @@
     margin: 0;
     padding: 0;
     padding-left: 37px;
-    padding-bottom: 75px;
+    padding-bottom: 79px;
     border: none;
 
     &::after {
-      top: 50%;
-      right: -3%;
-      width: 327px;
+      top: 19%;
+      right: -4%;
+      width: 325px;
       height: 3px;
     }
 
     &::before {
       position: absolute;
-      top: 50%;
+      top: 19%;
       left: -5%;
       content: "";
-      width: 28px;
+      width: 33px;
       height: 3px;
       background-color: $color-green;
     }

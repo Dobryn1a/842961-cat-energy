@@ -380,9 +380,9 @@
 
   .form__info-text {
     padding: 0 70px;
-    padding-top: 53px;
+    padding-top: 56px;
     padding-right: 350px;
-    padding-bottom: 69px;
+    padding-bottom: 65px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -398,7 +398,7 @@
   }
 
   .form__input {
-    padding: 14px 19px;
+    padding: 11px 17px;
     margin: 0;
     font-size: 20px;
     line-height: 20px;
@@ -410,7 +410,7 @@
   }
 
   .form__row {
-    padding-bottom: 20px;
+    padding-bottom: 18px;
   }
 
   .form__row--age {
@@ -418,8 +418,8 @@
   }
 
   .form__section--target {
-    padding: 0 88px;
-    padding-top: 36px;
+    padding: 0 87px;
+    padding-top: 32px;
     padding-bottom: 33px;
     margin: 0 70px;
     display: block;
@@ -437,7 +437,7 @@
   }
 
   .form__label--target .form__radio + .form__radio-indicator {
-    top: -15%;
+    top: -24%;
     left: -13%;
     width: 40px;
     height: 40px;
@@ -461,8 +461,8 @@
 
   .form__main {
     padding: 0;
-    padding-top: 79px;
-    padding-bottom: 70px;
+    padding-top: 75px;
+    padding-bottom: 74px;
     font-size: 36px;
     line-height: 36px;
   }
@@ -490,20 +490,26 @@
 
   .form__input--contact-list {
     padding-right: 80px;
+    padding-left: 19px;
+  }
+
+  .form__contact-item {
+    padding-bottom: 19px;
   }
 
   .form__button {
     top: 25%;
-    left: 91%;
+    left: 94%;
   }
 
   .form__section--comment {
-    padding: 69px 70px;
+    padding: 45px 70px;
+    padding-bottom: 62px;
     position: relative;
 
     &::after {
       position: absolute;
-      top: 21%;
+      top: 17%;
       right: 0%;
       content: "";
       width: 480px;
@@ -513,7 +519,7 @@
 
     &::before {
       position: absolute;
-      top: 21%;
+      top: 17%;
       left: 0%;
       content: "";
       width: 30px;
@@ -524,7 +530,7 @@
 
   .form__main--comment {
     padding: 0;
-    padding-bottom: 71px;
+    padding-bottom: 77px;
     &::after {
       display: none;
     }
@@ -533,7 +539,7 @@
   .form__comment--input {
     width: 100%;
     min-height: 174px;
-    padding: 20px 17px;
+    padding: 8px 17px;
     font-size: 20px;
     line-height: 30px;
 
@@ -549,12 +555,12 @@
 
   .form__section--optional {
     padding: 0 70px;
-    padding-bottom: 54px;
+    padding-bottom: 16px;
     position: relative;
 
     &::after {
       position: absolute;
-      top: 15%;
+      top: 8%;
       right: 0%;
       content: "";
       width: 446px;
@@ -564,7 +570,7 @@
 
     &::before {
       position: absolute;
-      top: 15%;
+      top: 8%;
       left: 0%;
       content: "";
       width: 30px;
@@ -576,7 +582,7 @@
   .form__main--optional {
     margin: 0;
     padding: 0;
-    padding-bottom: 41px;
+    padding-bottom: 65px;
 
     &::after {
       display: none;
@@ -604,8 +610,8 @@
     height: 40px;
 
     &::after {
-      top: 15%;
-      left: 16%;
+      top: 28%;
+      left: 23%;
       width: 21px;
       height: 16px;
     }

@@ -67,7 +67,7 @@
 
 @media (min-width: $tablet-width) {
   .slider {
-    padding-top: 369px;
+    padding-top: 366px;
     font-size: 20px;
     line-height: 20px;
     background-image: none;
@@ -75,7 +75,12 @@
 
   .slider__item {
     padding: 0;
-    margin-bottom: 68px;
+    padding-bottom: 4px;
+    margin-bottom: 70px;
+  }
+
+  .slider__item--before {
+    margin-right: 24px;
   }
 
   .slider__toggles {
@@ -92,8 +97,8 @@
 
   .slider__toggle {
     position: absolute;
-    top: -230%;
-    left: 47%;
+    top: -225%;
+    left: 46%;
     font-size: 0;
     width: 34px;
     height: 34px;

@@ -60,7 +60,7 @@
 
 @media (min-width: $tablet-width) {
   .product {
-    padding: 165px 20px 40px 20px;
+    padding: 164px 20px 40px 21px;
     border: none;
     background-color: $color-light-grey;
     position: relative;
@@ -81,8 +81,8 @@
   }
 
   .product__main {
-    padding: 0 60px;
-    padding-bottom: 28px;
+    padding: 0 54px;
+    padding-bottom: 41px;
     margin: 0;
     font-size: 20px;
     line-height: 20px;
@@ -93,13 +93,16 @@
     font-family: $custome-font;
     font-size: 16px;
     line-height: 16px;
-    margin-bottom: 33px;
+    margin-bottom: 32px;
   }
 
   .product__name,
   .product__size {
-    padding-top: 6px;
+    margin-right: 14px;
+    margin-left: 18px;
+    padding-top: 8px;
     padding-bottom: 6px;
+
   }
 
   .product__description tr {
