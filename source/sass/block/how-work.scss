@@ -135,13 +135,14 @@
     min-height: 304px;
     padding-right: 80px;
     text-align: left;
+
     &::before {
       position: absolute;
       top: -12%;
       left: 37%;
       z-index: 1;
       counter-increment: myCounter;
-      content:counter(myCounter);
+      content: counter(myCounter);
       font-size: 281px;
       line-height: 281px;
       color: $color-light-grey;

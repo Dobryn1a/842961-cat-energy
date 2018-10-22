@@ -15,8 +15,6 @@
   align-items: center;
 
   &:nth-child(2) {
-    margin-left: 36px;
-    margin-right: 40px;
     align-self: flex-end;
   }
 
@@ -37,8 +35,22 @@
     border: none;
   }
 
-  .copyright__list {
+  .copyright__item--vk {
     width: 30px;
-    height: 18px;
+    height: 16px;
+    padding-left: 10px;
+    padding-right: 67px;
+  }
+
+  .copyright__item--instagram {
+    width: 23px;
+    height: 23px;
+    padding-right: 28px;
+  }
+
+  .copyright__item--facebook {
+    width: 14px;
+    height: 28px;
+    padding-left: 20px;
   }
 }

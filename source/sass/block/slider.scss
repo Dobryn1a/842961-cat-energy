@@ -70,6 +70,7 @@
     padding-top: 366px;
     font-size: 20px;
     line-height: 20px;
+    background: linear-gradient(to right, $color-light-grey 50%, #eaeaea 50%);
     background-image: none;
   }
 
@@ -81,6 +82,10 @@
 
   .slider__item--before {
     margin-right: 24px;
+  }
+
+  .slider__item--after {
+    background-color: #eaeaea;
   }
 
   .slider__toggles {
@@ -102,7 +107,7 @@
     font-size: 0;
     width: 34px;
     height: 34px;
-    box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
     border: solid 1px #cdcdcd;
     border-radius: 34px;
     background-color: $color-white;

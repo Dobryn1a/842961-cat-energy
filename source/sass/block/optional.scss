@@ -79,10 +79,10 @@
 
   .optional__main {
     padding: 0;
-    padding-right: 246px;
     margin: 0;
     font-size: 20px;
-    line-height: 20px;;
+    line-height: 20px;
+    flex-shrink: 0;
   }
 
   .optional__table {
@@ -92,6 +92,22 @@
     width: 100%;
     font-size: 16px;
     line-height: 20px;
+  }
+
+  .optional__table--sugar {
+    padding-left: 244px;
+  }
+
+  .optional__table--water {
+    padding-left: 344px;
+  }
+
+  .optional__table--milk {
+    padding-left: 421px;
+  }
+
+  .optional__table--vitamin {
+    padding-left: 325px;
   }
 
   .optional__order {
