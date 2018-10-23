@@ -102,11 +102,21 @@
 }
 
 @media (min-width: $desktop-width) {
+  .intro {
+    padding: 0 193px;
+    position: relative;
 
-  /*.intro {
+    &::after {
+      width: 720px;
+      height: 696px;
+      content: "";
+      position: absolute;
+      z-index: 1;
+      top: 0%;
+      right: 0%;
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+    }
   }
-
-  .intro__image {
-    display: none;
-  }*/
 }

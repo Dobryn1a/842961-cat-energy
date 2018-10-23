@@ -76,3 +76,9 @@
     display: none;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    padding: 0 109px;
+  }
+}

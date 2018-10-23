@@ -17,15 +17,15 @@
         </div>
         <nav class="page-header__nav page-nav">
           <div class="page-nav__wrapper">
-            <ul class="page-nav__list site-list">
-              <li class="site-list__item site-list__item--active">
-                <a class="site-list__href" href="">Главная</a>
+            <ul class="page-nav__list site-list site-list--desk">
+              <li class="site-list__item site-list__item--desk site-list__item--active">
+                <a class="site-list__href site-list__href--desk" href="">Главная</a>
               </li>
               <li class="site-list__item">
-                <a class="site-list__href" href="catalog.html">Каталог продукции</a>
+                <a class="site-list__href site-list__href--desk" href="catalog.html">Каталог продукции</a>
               </li>
               <li class="site-list__item">
-                <a class="site-list__href" href="form.html">Подбор программы</a>
+                <a class="site-list__href site-list__href--desk" href="form.html">Подбор программы</a>
               </li>
             </ul>
           </div>
@@ -94,7 +94,10 @@
             </div>
           </div>
           <div class="example__slider slider">
-            <span class="slider__image"></span>
+            <div class="slider__image">
+              <div class="slider__image--before"></div>
+              <div class="slider__image--after"></div>
+            </div>
             <div class="slider__wrapper">
               <button class="slider__item slider__item--before" type="button">Было</button>
               <p class="example__toggles slider__toggles">
