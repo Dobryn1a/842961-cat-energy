@@ -70,19 +70,19 @@
     padding: 0;
     font-size: 20px;
     line-height: 20px;
-    background: linear-gradient(to right, $color-light-grey 50%, #eaeaea 50%);
 
   }
 
   .slider__image {
     display: flex;
-    background: linear-gradient(to bottom, $color-white 50%, $color-light-grey 50%);
+    background: linear-gradient(to bottom, $color-white 50%, #eaeaea 50%);
   }
 
   .slider__image--before {
     width: 50%;
     height: 499px;
     content: "";
+    background: linear-gradient(to bottom, $color-white 50%, $color-light-grey 50%);
     background-image: url("../img/before-tablet@1x.png");
     background-position: -6% 50%;
     background-repeat: no-repeat;
@@ -95,6 +95,10 @@
     background-image: url("../img/after-tablet@1x.png");
     background-position: 114% 50%;
     background-repeat: no-repeat;
+  }
+
+  .slider__wrapper {
+    background: linear-gradient(to right, $color-light-grey 50%, #eaeaea 50%);
   }
 
   .slider__item {
