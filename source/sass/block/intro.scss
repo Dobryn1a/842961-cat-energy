@@ -103,7 +103,7 @@
 
 @media (min-width: $desktop-width) {
   .intro {
-    padding: 0 193px;
+    padding: 0 150px;
     position: relative;
 
     &::after {
@@ -112,11 +112,48 @@
       content: "";
       position: absolute;
       z-index: 1;
-      top: 0%;
+      top: -58%;
       right: 0%;
       background-image: url("../img/index-background-desktop@1x.jpg");
       background-position: 50% 50%;
       background-repeat: no-repeat;
     }
+  }
+
+  .intro__main,
+  .intro__text,
+  .intro__form {
+    position: relative;
+    z-index: 2;
+  }
+
+  .intro__main {
+    padding: 0;
+    padding-top: 113px;
+    padding-right: 435px;
+  }
+
+  .intro__text {
+    padding: 0;
+    padding-top: 33px;
+    padding-bottom: 53px;
+    text-align: left;
+  }
+
+  .intro__image {
+    margin: 0;
+    content: "";
+    z-index: 3;
+    position: absolute;
+    top: 9%;
+    right: 17%;
+    width: 552px;
+    height: 499px;
+  }
+
+  .intro__form {
+    margin-bottom: 200px;
+    top: 0%;
+    left: 0%;
   }
 }
