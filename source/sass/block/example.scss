@@ -165,9 +165,48 @@
 @media (min-width: $desktop-width) {
   .example {
     display: flex;
+    background-color: $color-white;
+  }
+
+  .example__wrapper {
+    width: 48%;
+    padding: 0;
+    padding-left: 64px;
+    background: linear-gradient(to bottom, $color-white 33%, $color-light-grey 33%);
+  }
+
+  .example__main {
+    padding-top: 78px;
+  }
+
+  .example__text {
+    padding-top: 146px;
+    padding-right: 122px;
   }
 
   .example__conteiner {
+    padding-top: 67px;
     display: block;
   }
+
+  .example__results {
+    width: 366px;
+    padding: 0;
+  }
+
+  .example__results-text {
+    background-color: $color-light-grey;
+  }
+
+  .example__results-item {
+    margin-right: 0;
+  }
+
+  .example__cost {
+    padding: 0;
+    padding-top: 56px;
+    margin: 0;
+    text-align: left;
+  }
+
 }

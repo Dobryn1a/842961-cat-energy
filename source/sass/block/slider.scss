@@ -70,21 +70,19 @@
     padding: 0;
     font-size: 20px;
     line-height: 20px;
-
   }
 
   .slider__image {
     display: flex;
     padding-top: 42px;
-    background: linear-gradient(to bottom, $color-white 40%, #eaeaea 60%);
+    background: linear-gradient(to bottom, $color-white 38%, #eaeaea 38%);
   }
 
   .slider__image--before {
     width: 50%;
     height: 550px;
     content: "";
-    background: linear-gradient(to bottom, $color-white 40%, $color-light-grey 60%);
-    background-image: url("../img/before-tablet@1x.png");
+    background-image: url("../img/before-tablet@1x.png"), linear-gradient(to bottom, $color-white 33%, $color-light-grey 33%);
     background-position: -16% 40%;
     background-repeat: no-repeat;
   }
@@ -109,7 +107,7 @@
   }
 
   .slider__item--before {
-    margin-right: 24px;
+    margin-right: 25px;
   }
 
   .slider__item--after {
@@ -153,6 +151,19 @@
   }
 }
 
-/*@media (min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
+  .slider {
+    padding: 0;
+    width: 52%;
+    background: linear-gradient(to bottom, $color-white 33%, #eaeaea 33%);
+  }
 
-}*/
+  .slider__image--before {
+    background-position: 8% 40%;
+  }
+
+  .slider__image--after {
+    background-position: 104% 45%;
+  }
+
+}

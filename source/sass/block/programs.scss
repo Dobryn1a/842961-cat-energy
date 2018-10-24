@@ -14,3 +14,10 @@
     padding: 0 30px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .programs {
+    padding-left: 63px;
+    padding-right: 17px;
+  }
+}

@@ -168,10 +168,66 @@
 @media (min-width: $desktop-width) {
   .programs-list {
     display: flex;
+    justify-content: space-between;
+  }
+
+  .programs-list__item {
+    width: 570px;
+    padding-top: 77px;
+    padding-left: 52px;
+    padding-bottom: 61px;
+    padding-right: 56px;
   }
 
   .programs-list__item--slim {
     margin: 0;
-    margin-right: 20px;
+    margin-right: 80px;
+  }
+
+  .programs-list__main {
+    padding: 0;
+    padding-left: 164px;
+    padding-bottom: 74px;
+    margin: 0;
+  }
+
+  .programs-list__text {
+    padding: 0;
+    padding-bottom: 31px;
+    margin: 0;
+  }
+
+  .programs-list__item--slim {
+
+    &::after {
+      top: 12%;
+      left: 9%;
+      width: 100px;
+      height: 100px;
+      border-radius: 100px;
+      background-color: $color-green;
+      background-image: url("../img/icon-cat-slim.svg");
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .programs-list__item--pro {
+
+    &::after {
+      top: 12%;
+      left: 9%;
+      width: 100px;
+      height: 100px;
+      border-radius: 100px;
+      background-color: $color-green;
+      background-image: url("../img/icon-cat-pro.svg");
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .programs-list__adress {
+    background-position: 30% 48%;
   }
 }

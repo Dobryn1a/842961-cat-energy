@@ -71,6 +71,16 @@
     }
   }
 
+  .site-list__href {
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: normal;
+  }
+
+  .site-list__item {
+    margin-left: 34px;
+  }
+
   .site-list__href--desk {
     color: $color-white;
   }
