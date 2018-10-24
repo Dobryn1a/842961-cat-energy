@@ -75,25 +75,26 @@
 
   .slider__image {
     display: flex;
-    background: linear-gradient(to bottom, $color-white 50%, #eaeaea 50%);
+    padding-top: 42px;
+    background: linear-gradient(to bottom, $color-white 40%, #eaeaea 60%);
   }
 
   .slider__image--before {
     width: 50%;
-    height: 499px;
+    height: 550px;
     content: "";
-    background: linear-gradient(to bottom, $color-white 50%, $color-light-grey 50%);
+    background: linear-gradient(to bottom, $color-white 40%, $color-light-grey 60%);
     background-image: url("../img/before-tablet@1x.png");
-    background-position: -6% 50%;
+    background-position: -16% 40%;
     background-repeat: no-repeat;
   }
 
   .slider__image--after {
     width: 50%;
-    height: 517px;
+    height: 550px;
     content: "";
     background-image: url("../img/after-tablet@1x.png");
-    background-position: 114% 50%;
+    background-position: 111% 45%;
     background-repeat: no-repeat;
   }
 
