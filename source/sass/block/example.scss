@@ -71,14 +71,27 @@
 }
 
 .example__cost {
+  display: flex;
   padding: 0;
-  padding-top: 35px;
+  padding-top: 33px;
+  padding-left: 47px;
+  padding-bottom: 3px;
   margin: 0;
   font-size: 14px;
   line-height: 20px;
   color: $color-text-dark-grey;
   text-align: center;
   text-transform: uppercase;
+}
+
+.example__cost-text,
+.example__cost-price {
+  padding: 0;
+  margin: 0;
+}
+
+.example__cost-price {
+  padding-left: 3px;
 }
 
 @media (min-width: $tablet-width) {
@@ -146,6 +159,7 @@
   }
 
   .example__cost {
+    display: block;
     padding: 0;
     padding-top: 9px;
     padding-left: 108px;
@@ -203,10 +217,14 @@
   }
 
   .example__cost {
+    display: flex;
     padding: 0;
     padding-top: 56px;
     margin: 0;
     text-align: left;
   }
 
+  .example__cost-price {
+    padding-left: 64px;
+  }
 }

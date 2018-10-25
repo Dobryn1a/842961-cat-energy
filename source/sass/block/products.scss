@@ -21,6 +21,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .products {
+    padding-bottom: 20px;
+  }
+
   .products__main {
     margin: 0;
     padding: 0 30px;
@@ -54,6 +58,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .products {
+    padding-bottom: 30px;
+  }
+
   .products__main {
     padding: 0 40px;
     padding-top: 80px;
