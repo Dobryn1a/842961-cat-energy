@@ -117,3 +117,23 @@
     height: 40px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .show-more {
+    width: 245px;
+  }
+
+  .show-more__wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .show-more__main {
+
+    &::before,
+    &::after {
+      top: -39%;
+      left: 33%;
+    }
+  }
+}

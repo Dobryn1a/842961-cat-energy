@@ -66,3 +66,15 @@
     }
   }
 }
+
+@media (min-width: $desktop-width)  {
+  .products-optional__wrapper {
+    display: flex;
+    padding: 0 2px;
+    padding-bottom: 83px;
+  }
+
+  .products-optional__main {
+    padding-top: 8px;
+  }
+}

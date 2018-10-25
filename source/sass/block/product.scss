@@ -107,3 +107,19 @@
     border-bottom: 1px solid #cdcdcd;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .product__main {
+    padding: 0 15px;
+    padding-bottom: 19px;
+  }
+
+  .product__description {
+    margin-bottom: 31px;
+  }
+
+  .product__name,
+  .product__size {
+    padding-bottom: 7px;
+  }
+}

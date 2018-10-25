@@ -54,13 +54,24 @@
 }
 
 @media (min-width: $desktop-width) {
+  .products__main {
+    padding: 0 40px;
+    padding-top: 80px;
+    padding-bottom: 165px;
+  }
+
   .products__list {
+    padding: 0 40px;
     display: flex;
     flex-wrap: wrap;
   }
 
   .products__list-item {
-    width: 250px;
-    margin-right: 20px;
+    margin-bottom: 143px;
+    width: 245px;
+  }
+
+  .products__list-item--last-line {
+    margin-bottom: 66px;
   }
 }
