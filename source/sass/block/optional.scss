@@ -120,34 +120,34 @@
     border: none;
     border-top: 0.5px solid #cdcdcd;
     border-bottom: 0.5px solid #cdcdcd;
-    padding: 16px 0;
-    padding-bottom: 15px;
+    padding: 15px 0;
+    padding-bottom: 16px;
     margin: 0;
   }
 
   .optional__conteiner {
-    width: 614px;
+    width: 620px;
     padding: 0;
-    padding-top: 10px;
+    padding-top: 8px;
   }
 
   .optional__table {
-    width: 292px;
+    width: 299px;
   }
 
   .optional__table-size {
     padding: 0;
-    width: auto;
+    width: 83%;
     text-align: left;
   }
 
   .optional__table-price {
     padding: 0;
-    text-align: right;
+    text-align: left;
   }
 
   .optional__order {
     width: 245px;
-    margin-left: 36px;
+    margin-left: 30px;
   }
 }
