@@ -44,9 +44,16 @@
 
 @media (min-width: $desktop-width) {
   .page-footer__wrapper {
+    width: 1300px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    padding: 0 39px;
-    padding-top: 6px;
+    padding: 0 37px;
+    padding-right: 42px;
+    padding-top: 8px;
+  }
+
+  .page-footer__copyright {
+    width: auto;
   }
 }

@@ -65,10 +65,16 @@
 
 @media (min-width: $desktop-width) {
   .products-optional__wrapper {
+    border-top: 3px solid #68b738;
+  }
+
+  .products-optional__container {
+    width: 1300px;
+    padding: 0;
+    margin: 0 auto;
     display: flex;
     padding: 0 2px;
     padding-bottom: 83px;
-    border-top: 3px solid #68b738;
   }
 
   .products-optional {
@@ -79,6 +85,7 @@
     padding-top: 8px;
     padding-left: 10px;
     padding-bottom: 47px;
+    margin-left: 73px;
     transform: translateY(-36%);
   }
 }

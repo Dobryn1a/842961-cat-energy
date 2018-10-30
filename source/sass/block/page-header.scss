@@ -79,9 +79,15 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
+    width: 1300px;
     padding: 0 59px;
-    padding-top: 32px;
-    padding-right: 40px;
-    margin: 0;
+    padding-top: 31px;
+    padding-right: 44px;
+    margin: 0 auto;
+  }
+
+  .page-header__wrapper {
+    position: relative;
+    z-index: 2;
   }
 }

@@ -160,25 +160,26 @@
 
   .slider__image {
     display: flex;
-    padding-left: 25px;
+    padding-left: 53px;
     padding-top: 2px;
     background: none;
   }
 
   .slider__image--before {
+    width: 55%;
     background-image: url("../img/before-tablet@1x.png"), linear-gradient(to bottom, $color-white 40%, $color-light-grey 39%);
     background-position: 11% 73%;
   }
 
   .slider__image--after {
     background-image: url("../img/after-tablet@1x.png"), linear-gradient(to bottom, $color-white 40%, #eaeaea 39%);
-    background-position: 100% 71%;
+    background-position: 92% 71%;
   }
 
   .slider__wrapper {
-    padding-top: 29px;
-    padding-left: 23px;
-    background: linear-gradient(to right, #f2f2f2 52%, #eaeaea 50%);
+    padding-top: 28px;
+    padding-left: 86px;
+    background: linear-gradient(to right, #f2f2f2 56%, #eaeaea 50%);
   }
 
   .slider__item {

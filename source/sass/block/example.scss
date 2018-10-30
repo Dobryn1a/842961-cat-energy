@@ -178,6 +178,13 @@
 
 @media (min-width: $desktop-width) {
   .example {
+    background: linear-gradient(to bottom, $color-white 33%, $color-light-grey 32%);
+  }
+
+  .example__box {
+    width: 1300px;
+    padding: 0;
+    margin: 0 auto;
     display: flex;
     background-color: $color-white;
   }
@@ -185,7 +192,7 @@
   .example__wrapper {
     width: 48%;
     padding: 0;
-    padding-left: 40px;
+    padding-left: 72px;
     background: linear-gradient(to bottom, $color-white 33%, $color-light-grey 32%);
   }
 
@@ -195,7 +202,7 @@
 
   .example__text {
     padding-top: 146px;
-    padding-right: 150px;
+    padding-right: 120px;
   }
 
   .example__conteiner {
