@@ -1,5 +1,6 @@
 .academy {
   padding: 0 20px;
+  padding-right: 13px;
   margin: 0;
   display: flex;
   justify-content: space-between;
@@ -21,10 +22,14 @@
   }
 }
 
+.academy__adress {
+  padding-top: 17px;
+}
+
 .academy__logo {
-  padding: 22px 0;
-  width: 27px;
-  height: 34px;
+  padding: 0;
+  width: 41px;
+  height: 45px;
 
   &:hover {
     fill: #68b738;
@@ -45,12 +50,32 @@
   .academy__item {
     margin: 0;
     padding: 0;
-    padding-right: 23px;
-    padding-top: 6px;
+    padding-right: 16px;
+    padding-top: 13px;
+  }
+
+  .academy__adress {
+    padding: 0;
   }
 
   .academy__logo {
     margin: 0;
     padding: 0;
+    width: 39px;
+    height: 45px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .academy__item {
+    padding-top: 18px;
+  }
+
+  .academy__adress {
+    padding-top: 5px;
+  }
+
+  .academy__logo {
+    width: 40px;
   }
 }
