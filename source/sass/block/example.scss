@@ -1,12 +1,13 @@
 .example {
+  padding: 0 20px;
+  margin: 0;
   margin-top: 47px;
   background-color: $color-light-grey;
 }
 
 .example__main {
   padding: 0;
-  padding-top: 33px;
-  padding-left: 20px;
+  padding-top: 15px;
   margin: 0;
   font-size: 36px;
   line-height: 60px;
@@ -16,9 +17,8 @@
 
 .example__text {
   padding: 0;
-  padding-top: 33px;
-  padding-left: 20px;
-  padding-right: 34px;
+  padding-top: 24px;
+  padding-right: 14px;
   margin: 0;
   font-family: $custome-font;
   font-size: 14px;
@@ -29,31 +29,53 @@
 .example__results {
   padding: 0;
   margin: 0;
-  padding-top: 27px;
+  padding-top: 25px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   list-style: none;
   text-align: center;
 }
 
+.example__results-item {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
 .example__results-main {
+  width: 124px;
+  height: 56px;
+  padding: 0;
+  padding-top: 13px;
+  margin: 0;
   font-size: 24px;
   line-height: 24px;
+  border-radius: 3px;
+  border: solid 1px #cdcdcd;
   color: $color-text-dark-grey;
   font-weight: normal;
   text-transform: uppercase;
 }
 
 .example__results-text {
+  position: absolute;
+  top: 84%;
+  left: 0%;
+  padding: 0;
+  margin: 0 21px;
   font-family: $custome-font;
   font-size: 12px;
   line-height: 12px;
   color: $color-text-light-grey;
+  background-color: $color-light-grey;
 }
 
 .example__cost {
+  display: flex;
   padding: 0;
-  padding-top: 25px;
+  padding-top: 33px;
+  padding-left: 47px;
+  padding-bottom: 3px;
   margin: 0;
   font-size: 14px;
   line-height: 20px;
@@ -62,22 +84,154 @@
   text-transform: uppercase;
 }
 
+.example__cost-text,
+.example__cost-price {
+  padding: 0;
+  margin: 0;
+}
+
+.example__cost-price {
+  padding-left: 3px;
+}
+
 @media (min-width: $tablet-width) {
-  .example__conteiner {
-    display: flex;
+  .example {
+    padding: 0;
+    margin: 0;
   }
 
   .example__wrapper {
     padding: 30px;
+    background-color: $color-white;
+  }
+
+  .example__main {
+    padding: 0;
+    padding-top: 12px;
+    margin: 0;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .example__results-item {
+    margin-right: 42px;
+    position: relative;
+  }
+
+  .example__text {
+    padding: 0;
+    padding-top: 64px;
+    padding-right: 6px;
+    margin: 0;
+    font-family: $custome-font;
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-text-light-grey;
+  }
+
+  .example__results-main {
+    width: 162px;
+    height: 72px;
+    padding: 0;
+    padding-top: 17px;
+    margin: 0;
+    font-size: 30px;
+    line-height: 37px;
+    border-radius: 3px;
+    border: solid 1px #cdcdcd;
+  }
+
+  .example__results {
+    padding: 0;
+  }
+
+  .example__results-text {
+    position: absolute;
+    top: 89%;
+    left: 6%;
+    width: 142px;
+    height: 27px;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: $color-white;
+  }
+
+  .example__cost {
+    display: block;
+    padding: 0;
+    padding-top: 9px;
+    padding-left: 108px;
+    margin: 0;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: right;
+  }
+
+  .example__conteiner {
+    padding-top: 52px;
+    display: flex;
+    justify-content: space-between;
   }
 }
 
 @media (min-width: $desktop-width) {
   .example {
+    background: linear-gradient(to bottom, $color-white 33%, $color-light-grey 32%);
+  }
+
+  .example__box {
+    width: 1300px;
+    padding: 0;
+    margin: 0 auto;
     display: flex;
+    background-color: $color-white;
+  }
+
+  .example__wrapper {
+    width: 48%;
+    padding: 0;
+    padding-left: 72px;
+    background: linear-gradient(to bottom, $color-white 33%, $color-light-grey 32%);
+  }
+
+  .example__main {
+    padding-top: 78px;
+  }
+
+  .example__text {
+    padding-top: 146px;
+    padding-right: 120px;
   }
 
   .example__conteiner {
+    padding-top: 67px;
     display: block;
+  }
+
+  .example__results {
+    width: 366px;
+    padding: 0;
+  }
+
+  .example__results-text {
+    background-color: $color-light-grey;
+  }
+
+  .example__results-item {
+    margin-right: 0;
+  }
+
+  .example__cost {
+    display: flex;
+    padding: 0;
+    padding-top: 56px;
+    margin: 0;
+    text-align: left;
+  }
+
+  .example__cost-price {
+    padding-left: 64px;
   }
 }

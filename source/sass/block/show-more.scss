@@ -1,17 +1,43 @@
 .show-more {
-  padding: 0;
+  padding: 24px 20px;
   margin: 0;
+  border: 1px solid #ededed;
+  text-align: center;
 }
 
 .show-more__main {
+  position: relative;
+  padding: 0;
+  padding-top: 56px;
+  margin: 0;
   font-size: 16px;
   line-height: 20px;
   color: $color-text-dark-grey;
   text-transform: uppercase;
   font-weight: normal;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 22%;
+    left: 44%;
+    width: 31px;
+    height: 2px;
+    opacity: 0.2;
+    background-color: $color-text-medium-grey;
+  }
+
+  &::before {
+    transform: rotate(90deg);
+  }
 }
 
 .show-more__text {
+  padding: 0;
+  padding-top: 8px;
+  padding-bottom: 22px;
+  margin: 0;
   font-family: $custome-font;
   font-size: 12px;
   line-height: 16px;
@@ -19,11 +45,17 @@
 }
 
 .show-more__button {
+  display: block;
+  padding-top: 9px;
+  margin: 0;
+  width: 280px;
+  height: 40px;
   font-size: 16px;
   line-height: 20px;
   color: $color-text-light-grey;
   background-color: $color-light-grey;
   text-transform: uppercase;
+  text-align: center;
 
   &:hover {
     background-color: #ebebeb;
@@ -32,5 +64,75 @@
   &:active {
     opacity: 0.3;
     background-color: #ebebeb;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .show-more {
+    padding-top: 117px;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-bottom: 40px;
+    text-align: center;
+    margin-bottom: 66px;
+    width: 324px;
+  }
+
+  .show-more__wrapper {
+    padding-left: 58px;
+    padding-right: 58px;
+  }
+
+  .show-more__main {
+    padding: 0;
+    padding-top: 47px;
+    margin: 0;
+    font-size: 20px;
+    line-height: 20px;
+
+    &::before,
+    &::after {
+      width: 60px;
+      height: 2px;
+      top: -39%;
+      left: 34%;
+    }
+  }
+
+  .show-more__text {
+    padding: 0;
+    padding-top: 26px;
+    padding-bottom: 85px;
+    font-size: 16px;
+    line-height: normal;
+  }
+
+  .show-more__button {
+    display: block;
+    padding-top: 9px;
+    margin: 0;
+    margin-right: 20px;
+    margin-left: 22px;
+    width: auto;
+    height: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .show-more {
+    width: 245px;
+  }
+
+  .show-more__wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .show-more__main {
+    &::before,
+    &::after {
+      top: -39%;
+      left: 33%;
+    }
   }
 }

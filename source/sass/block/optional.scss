@@ -4,7 +4,14 @@
   list-style: none;
 }
 
+.optional__item {
+  border-bottom: 1px solid #cdcdcd;
+}
+
 .optional__main {
+  padding: 0;
+  padding-top: 14px;
+  margin: 0;
   font-size: 16px;
   line-height: 16px;
   color: $color-text-medium-grey;
@@ -13,18 +20,40 @@
 }
 
 .optional__table {
+  padding: 0;
+  padding-top: 10px;
+  padding-bottom: 13px;
+  margin: 0;
+  width: 100%;
   font-family: $custome-font;
   font-size: 14px;
   line-height: 14px;
   color: $color-text-light-grey;
 }
 
+.optional__table-size {
+  padding: 0;
+  text-align: left;
+}
+
+.optional__table-price {
+  padding: 0;
+  text-align: right;
+}
+
 .optional__order {
+  display: block;
+  margin-bottom: 17px;
+  padding: 0 10px;
+  padding-top: 11px;
+  width: 280px;
+  height: 40px;
   font-size: 16px;
   line-height: 20px;
   color: $color-white;
   background-color: $color-green;
   text-transform: uppercase;
+  text-align: center;
 
   &:hover {
     background-color: #5eaa2f;
@@ -37,22 +66,88 @@
 }
 
 @media (min-width: $tablet-width) {
+  .optional {
+    padding: 0 30px;
+  }
+
   .optional__item {
+    border: 0.5px solid #cdcdcd;
+    padding: 25px 37px 27px 37px;
+  }
+
+  .optional__conteiner {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 20px;
   }
 
   .optional__main {
-    width: 360px;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    line-height: 20px;
+    flex-shrink: 0;
   }
 
   .optional__table {
-    width: 360px;
+    padding: 0;
+    padding-top: 2px;
+    margin: 0;
+    width: 250px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .optional__table-size {
+    padding: 0;
+    width: 63%;
+    text-align: right;
+  }
+
+  .optional__order {
+    margin: 0;
+    width: 100%;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .products-optional__wrapper {
+  .optional {
+    padding-left: 37px;
+  }
+
+  .optional__item {
     display: flex;
+    border: none;
+    border-top: 0.5px solid #cdcdcd;
+    border-bottom: 0.5px solid #cdcdcd;
+    padding: 16px 0;
+    padding-bottom: 15px;
+    margin: 0;
+  }
+
+  .optional__conteiner {
+    width: 620px;
+    padding: 0;
+    padding-top: 8px;
+  }
+
+  .optional__table {
+    width: 299px;
+  }
+
+  .optional__table-size {
+    padding: 0;
+    width: 83%;
+    text-align: left;
+  }
+
+  .optional__table-price {
+    padding: 0;
+    text-align: left;
+  }
+
+  .optional__order {
+    width: 245px;
+    margin-left: 30px;
   }
 }

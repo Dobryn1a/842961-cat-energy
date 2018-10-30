@@ -1,3 +1,8 @@
+.how-work {
+  margin: 0;
+  padding: 0 20px;
+}
+
 .how-work__list {
   padding: 0;
   margin: 0;
@@ -6,8 +11,7 @@
 
 .how-work__main {
   padding: 0;
-  padding-top: 32px;
-  padding-left: 22px;
+  padding-top: 20px;
   margin: 0;
   font-size: 36px;
   line-height: 60px;
@@ -15,11 +19,17 @@
   font-weight: normal;
 }
 
+.how-work__item {
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
 .how-work__text {
   padding: 0;
-  padding-top: 41px;
-  padding-left: 100px;
-  padding-right: 26px;
+  padding-top: 29px;
+  padding-left: 80px;
+  padding-right: 6px;
   margin: 0;
   font-family: $custome-font;
   font-size: 14px;
@@ -27,30 +37,193 @@
   color: $color-text-light-grey;
 }
 
-/*.how-work__item--page {
+.how-work__text--change {
+  padding-top: 23px;
+}
+
+.how-work__text--month {
+  padding-top: 26px;
+}
+
+.how-work__item--page {
+  content: "";
   position: absolute;
-  top: 0%;
+  top: 30%;
   left: 0%;
   width: 60px;
   height: 60px;
   background-color: $color-green;
   background-image: url("../img/advantage-leaf@1x.png");
-  background-position: center 50%;
+  background-position: 50% 50%;
   background-repeat: no-repeat;
-}*/
+}
+
+.how-work__item--flour {
+  content: "";
+  position: absolute;
+  top: 29%;
+  left: 0%;
+  width: 60px;
+  height: 60px;
+  background-color: $color-green;
+  background-image: url("../img/advantage-powder@1x.png");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.how-work__item--change {
+  content: "";
+  position: absolute;
+  top: 26%;
+  left: 0%;
+  width: 60px;
+  height: 60px;
+  background-color: $color-green;
+  background-image: url("../img/advantage-dining@1x.png");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.how-work__item--month {
+  content: "";
+  position: absolute;
+  top: 29%;
+  left: 0%;
+  width: 60px;
+  height: 60px;
+  background-color: $color-green;
+  background-image: url("../img/advantage-clock@1x.png");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
 
 @media (min-width: $tablet-width) {
+  .how-work {
+    margin: 0;
+    padding: 0 30px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
   .how-work__list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    counter-reset: myCounter;
+  }
+
+  .how-work__main {
+    font-size: 60px;
+    line-height: 60px;
+    padding: 0;
+    padding-top: 46px;
+    padding-bottom: 68px;
+  }
+
+  .how-work__text {
+    padding: 0;
+    padding-top: 117px;
+    padding-bottom: 48px;
+    font-family: $custome-font;
+    font-size: 16px;
+    line-height: 24px;
+    position: relative;
+    z-index: 2;
   }
 
   .how-work__item {
-    width: 300px;
+    width: 325px;
+    min-height: 304px;
+    padding-right: 80px;
+    text-align: left;
+
+    &::before {
+      position: absolute;
+      top: -12%;
+      left: 37%;
+      z-index: 1;
+      counter-increment: myCounter;
+      content: counter(myCounter);
+      font-size: 281px;
+      line-height: 281px;
+      color: $color-light-grey;
+    }
+  }
+
+  .how-work__item--page {
+    top: 1%;
+    left: 0%;
+    width: 80px;
+    height: 80px;
+  }
+
+  .how-work__item--flour {
+    top: 1%;
+    left: 0%;
+    width: 80px;
+    height: 80px;
+  }
+
+  .how-work__text--change,
+  .how-work__text--month {
+    padding-top: 129px;
+  }
+
+  .how-work__item--change {
+    top: 6%;
+    left: 0%;
+    width: 80px;
+    height: 80px;
+  }
+
+  .how-work__item--month {
+    top: 6%;
+    left: 0%;
+    width: 80px;
+    height: 80px;
   }
 }
 
-/*@media (min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
+  .how-work {
+    width: 1300px;
+    margin: 0 auto;
+    padding: 0 70px;
+    padding-right: 7px;
+    border: none;
+  }
 
+  .how-work__main {
+    padding: 0;
+    padding-top: 74px;
+    padding-bottom: 70px;
+  }
 
-}*/
+  .how-work__text {
+    padding-top: 114px;
+  }
+
+  .how-work__item {
+    width: 247px;
+    min-height: 233px;
+    padding: 0;
+
+    &::before {
+      top: -15%;
+      left: 48%;
+    }
+  }
+
+  .how-work__item--change {
+    top: 1%;
+    left: 0%;
+    width: 80px;
+    height: 80px;
+  }
+
+  .how-work__item--month {
+    top: 1%;
+    left: 0%;
+    width: 80px;
+    height: 80px;
+  }
+}

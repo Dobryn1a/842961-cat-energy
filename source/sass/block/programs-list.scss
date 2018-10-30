@@ -3,21 +3,69 @@
 }
 
 .programs-list__item--slim {
-  margin-bottom: 20px;
-  /*width: 50px;
-  height: 51px;
-  border-radius: 20px;
-  background-color: $color-green;
-  background-image: url("../img/icon-cat-slim.svg");
-  background-position: center 50%;
-  background-repeat: no-repeat;*/
+  margin-bottom: 23px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 8%;
+    left: 8%;
+    width: 50px;
+    height: 51px;
+    border-radius: 50px;
+    background-color: $color-green;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 1%;
+    left: 10%;
+    width: 29%;
+    height: 43%;
+    z-index: 2;
+    background-color: transparent;
+    background-image: url("../img/icon-cat-slim.svg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+}
+
+.programs-list__item--pro {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 8%;
+    left: 8%;
+    width: 50px;
+    height: 51px;
+    border-radius: 50px;
+    background-color: $color-green;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 4%;
+    width: 25%;
+    height: 36%;
+    z-index: 2;
+    background-color: transparent;
+    background-image: url("../img/icon-cat-pro.svg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
 }
 
 .programs-list__main {
   padding: 0;
   margin: 0;
-  padding-left: 92px;
-  padding-top: 39px;
+  padding-left: 91px;
+  padding-top: 29px;
   font-size: 24px;
   line-height: 37px;
   font-weight: normal;
@@ -26,8 +74,9 @@
 }
 
 .programs-list__text {
-  padding: 0 20px;
-  padding-top: 36px;
+  margin: 0 20px;
+  padding: 0;
+  padding-top: 29px;
   padding-bottom: 23px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   font-family: $custome-font;
@@ -37,7 +86,7 @@
 }
 
 .programs-list__adress {
-  padding: 21px 20px;
+  padding: 19px 20px;
   margin: 0;
   font-size: 16px;
   line-height: 16px;
@@ -45,7 +94,7 @@
   text-transform: uppercase;
   display: block;
   background-image: url("../img/icon-right-arrow-long.svg");
-  background-position: 50% 50%;
+  background-position: 45% 48%;
   background-repeat: no-repeat;
   background-color: $color-light-grey;
 
@@ -62,17 +111,158 @@
 }
 
 
-/*@media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
+  .programs-list__item {
+    padding-top: 73px;
+    padding-left: 54px;
+    padding-bottom: 61px;
+    padding-right: 280px;
+  }
 
-}*/
+  .programs-list__main {
+    padding: 0;
+    padding-bottom: 26px;
+    margin: 0;
+    font-size: 36px;
+    line-height: 37px;
+    font-weight: normal;
+  }
+
+  .programs-list__text {
+    padding: 0;
+    padding-bottom: 55px;
+    margin: 0;
+    font-family: $custome-font;
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+  }
+
+  .programs-list__item--slim {
+    margin-bottom: 34px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 25%;
+      left: 63%;
+      width: 200px;
+      height: 200px;
+      border-radius: 100px;
+      background-color: $color-green;
+    }
+
+    &::before {
+      top: 21%;
+      left: 64%;
+      width: 50%;
+      height: 82%;
+    }
+  }
+
+  .programs-list__item--pro {
+    padding-right: 310px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 25%;
+      left: 63%;
+      width: 200px;
+      height: 200px;
+      border-radius: 100px;
+      background-color: $color-green;
+    }
+
+    &::before {
+      top: 18%;
+      left: 58%;
+      width: 38%;
+      height: 66%;
+    }
+  }
+
+  .programs-list__adress {
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    line-height: 20px;
+    background-image: url("../img/icon-right-arrow-long.svg");
+    background-position: 37% 48%;
+    background-color: $color-light-grey;
+  }
+}
 
 @media (min-width: $desktop-width) {
   .programs-list {
     display: flex;
+    justify-content: space-between;
+  }
+
+  .programs-list__item {
+    width: 570px;
+    padding-top: 77px;
+    padding-left: 52px;
+    padding-bottom: 61px;
+    padding-right: 56px;
   }
 
   .programs-list__item--slim {
+      margin: 0;
+      margin-left: 60px;
+      margin-right: 30px;
+
+    &::after {
+      top: 12%;
+      left: 9%;
+      width: 100px;
+      height: 100px;
+      border-radius: 100px;
+      background-color: $color-green;
+    }
+
+    &::before {
+      top: 10%;
+      left: 12%;
+      width: 26%;
+      height: 43%;
+    }
+  }
+
+  .programs-list__main {
+    padding: 0;
+    padding-left: 164px;
+    padding-bottom: 74px;
     margin: 0;
-    margin-right: 20px;
+  }
+
+  .programs-list__text {
+    padding: 0;
+    padding-bottom: 31px;
+    margin: 0;
+  }
+
+  .programs-list__item--pro {
+    &::after {
+      top: 12%;
+      left: 9%;
+      width: 100px;
+      height: 100px;
+      border-radius: 100px;
+      background-color: $color-green;
+    }
+
+    &::before {
+      top: 16%;
+      left: 6%;
+      width: 24%;
+      height: 20%;
+    }
+  }
+
+  .programs-list__adress {
+    background-position: 30% 48%;
   }
 }
