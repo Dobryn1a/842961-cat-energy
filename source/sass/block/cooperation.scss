@@ -59,8 +59,10 @@
 
 @media (min-width: $tablet-width) {
   .cooperation__info {
+    width: 768px;
     padding: 0 70px;
     padding-right: 72px;
+    margin: 0 auto;
   }
 
   .cooperation__invite {
@@ -110,8 +112,8 @@
     width: 570px;
     height: 201px;
     position: absolute;
-    top: 25%;
-    left: 6%;
+    top: 98px;
+    left: 40px;
     background-color: $color-white;
     padding-top: 63px;
     padding-left: 76px;

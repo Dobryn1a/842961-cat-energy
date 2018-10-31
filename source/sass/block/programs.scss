@@ -4,13 +4,19 @@
   list-style: none;
 }
 
+.programs__wrapper {
+  padding: 0 20px;
+  padding-top: 23px;
+}
+
 @media (min-width: $tablet-width) {
-  /*.programs {
-    padding: 0 30px;
-  }*/
+  .programs__wrapper {
+    padding: 0;
+  }
 }
 
 @media (min-width: $desktop-width) {
-  /*.programs {
-  }*/
+  .programs__wrapper {
+    padding: 0;
+  }
 }

@@ -34,12 +34,8 @@
 
 @media (min-width: $tablet-width) {
   .products-optional__wrapper {
-    padding: 0;
-    margin: 0;
-  }
-
-  .products-optional {
     border-top: 3px solid #68b738;
+    padding: 0;
   }
 
   .products-optional__main {
@@ -49,9 +45,8 @@
     line-height: 36px;
     margin: 0;
     padding: 0;
-    padding-left: 39px;
+    padding-left: 37px;
     padding-right: 36px;
-    margin-left: 28px;
     padding-bottom: 56px;
     border: none;
     transform: translateY(-26%);
@@ -69,11 +64,8 @@
   }
 
   .products-optional__container {
-    width: 1300px;
-    padding: 0;
-    margin: 0 auto;
     display: flex;
-    padding: 0 2px;
+    padding: 0;
     padding-bottom: 83px;
   }
 
@@ -82,10 +74,10 @@
   }
 
   .products-optional__main {
+    padding: 0;
+    padding-right: 35px;
     padding-top: 8px;
-    padding-left: 10px;
     padding-bottom: 47px;
-    margin-left: 73px;
     transform: translateY(-36%);
   }
 }

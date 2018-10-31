@@ -46,7 +46,7 @@
   }
 
   &:active {
-    opacity: 0.3;
+    color: rgba(255, 255, 255, 0.3);
     background-color: #5eaa2f;
   }
 }
@@ -56,6 +56,9 @@
     padding: 0;
     background-image: none;
     text-align: left;
+  }
+
+  .intro__wrapper {
     position: relative;
   }
 
@@ -91,7 +94,7 @@
   .intro__form {
     position: absolute;
     top: 293px;
-    left: 245px;
+    left: 117px;
     width: 245px;
     padding: 16px 0;
     font-size: 20px;
@@ -111,16 +114,16 @@
       position: absolute;
       z-index: 1;
       top: -27%;
-      right: -5%;
-      background-image: url("../img/index-background-desktop@1x.jpg"), linear-gradient(to right, #ffffff 53%, #63a73a 48%);
+      right: 0%;
+      background-image: url("../img/index-background-desktop@1x.jpg"), linear-gradient(to right, #ffffff 50%, #63a73a 50%);
       background-size: 720px 696px, 100%;
-      background-position: calc(51% + 360px) top, center center;
+      background-position: calc(50% + 360px) top, center center;
       background-repeat: no-repeat;
     }
   }
 
   .intro__wrapper {
-    padding: 0 190px;
+    padding: 0 120px;
     padding-right: 610px;
   }
 
@@ -158,6 +161,6 @@
     padding-top: 16px;
     margin-bottom: 267px;
     top: 0;
-    left: 324px;
+    left: -1px;
   }
 }

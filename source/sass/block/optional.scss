@@ -60,19 +60,24 @@
   }
 
   &:active {
-    opacity: 0.3;
+    color: rgba(255, 255, 255, 0.3);
     background-color: #5eaa2f;
   }
 }
 
 @media (min-width: $tablet-width) {
   .optional {
-    padding: 0 30px;
+    padding: 0;
   }
 
   .optional__item {
-    border: 0.5px solid #cdcdcd;
+    border-bottom: transparent;
+    border-top: 1px solid #cdcdcd;
     padding: 25px 37px 27px 37px;
+
+    &:last-child {
+      border-bottom: 1px solid #cdcdcd;
+    }
   }
 
   .optional__conteiner {
@@ -111,10 +116,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .optional {
-    padding-left: 37px;
-  }
-
   .optional__item {
     display: flex;
     border: none;
