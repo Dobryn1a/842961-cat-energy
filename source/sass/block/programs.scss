@@ -1,8 +1,3 @@
-.programs {
-  padding: 0 20px;
-  padding-top: 23px;
-}
-
 .programs__list {
   padding: 0;
   margin: 0;
@@ -10,15 +5,12 @@
 }
 
 @media (min-width: $tablet-width) {
-  .programs {
+  /*.programs {
     padding: 0 30px;
-  }
+  }*/
 }
 
 @media (min-width: $desktop-width) {
-  .programs {
-    width: 1300px;
-    padding: 0 10px;
-    margin: 0 auto;
-  }
+  /*.programs {
+  }*/
 }

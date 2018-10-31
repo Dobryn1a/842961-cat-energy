@@ -3,14 +3,14 @@
 }
 
 .programs-list__item--slim {
-  margin-bottom: 23px;
+  margin-bottom: 20px;
   position: relative;
 
   &::after {
     content: "";
     position: absolute;
-    top: 8%;
-    left: 8%;
+    top: 23px;
+    left: 22px;
     width: 50px;
     height: 51px;
     border-radius: 50px;
@@ -21,9 +21,9 @@
     content: "";
     position: absolute;
     top: 1%;
-    left: 10%;
-    width: 29%;
-    height: 43%;
+    left: 11%;
+    width: 27%;
+    height: 44%;
     z-index: 2;
     background-color: transparent;
     background-image: url("../img/icon-cat-slim.svg");
@@ -38,8 +38,8 @@
   &::after {
     content: "";
     position: absolute;
-    top: 8%;
-    left: 8%;
+    top: 23px;
+    left: 22px;
     width: 50px;
     height: 51px;
     border-radius: 50px;
@@ -87,6 +87,7 @@
 
 .programs-list__adress {
   padding: 19px 20px;
+  padding-bottom: 22px;
   margin: 0;
   font-size: 16px;
   line-height: 16px;
@@ -114,8 +115,8 @@
 @media (min-width: $tablet-width) {
   .programs-list__item {
     padding-top: 73px;
-    padding-left: 54px;
-    padding-bottom: 61px;
+    padding-left: 52px;
+    padding-bottom: 63px;
     padding-right: 280px;
   }
 
@@ -139,7 +140,7 @@
   }
 
   .programs-list__item--slim {
-    margin-bottom: 34px;
+    margin-bottom: 32px;
     position: relative;
 
     &::after {
@@ -162,7 +163,7 @@
   }
 
   .programs-list__item--pro {
-    padding-right: 310px;
+    padding-right: 315px;
     position: relative;
 
     &::after {
@@ -190,7 +191,7 @@
     font-size: 20px;
     line-height: 20px;
     background-image: url("../img/icon-right-arrow-long.svg");
-    background-position: 37% 48%;
+    background-position: 38% 75%;
     background-color: $color-light-grey;
   }
 }

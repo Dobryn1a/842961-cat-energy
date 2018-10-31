@@ -8,7 +8,6 @@
 
 .cooperation__info {
   padding: 0 20px;
-  margin: 0;
   display: flex;
 }
 
@@ -61,6 +60,7 @@
 @media (min-width: $tablet-width) {
   .cooperation__info {
     padding: 0 70px;
+    padding-right: 72px;
   }
 
   .cooperation__invite {
