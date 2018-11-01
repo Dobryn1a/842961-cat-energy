@@ -33,8 +33,7 @@
 .intro__form {
   display: block;
   width: 280px;
-  height: 40px;
-  padding: 11px;
+  padding: 10px;
   font-size: 14px;
   line-height: 18px;
   color: $color-white;
@@ -47,16 +46,19 @@
   }
 
   &:active {
-    opacity: 0.3;
+    color: rgba(255, 255, 255, 0.3);
     background-color: #5eaa2f;
   }
 }
 
 @media (min-width: $tablet-width) {
   .intro {
-    padding: 0 30px;
+    padding: 0;
     background-image: none;
     text-align: left;
+  }
+
+  .intro__wrapper {
     position: relative;
   }
 
@@ -91,11 +93,10 @@
 
   .intro__form {
     position: absolute;
-    top: 34%;
-    left: 15%;
+    top: 293px;
+    left: 117px;
     width: 245px;
-    height: 52px;
-    padding: 12px;
+    padding: 16px 0;
     font-size: 20px;
     line-height: 20px;
   }
@@ -104,6 +105,7 @@
 @media (min-width: $desktop-width) {
   .intro {
     position: relative;
+    padding: 0;
 
     &::after {
       width: 100%;
@@ -112,19 +114,17 @@
       position: absolute;
       z-index: 1;
       top: -27%;
-      right: -5%;
-      background-image: url("../img/index-background-desktop@1x.jpg"), linear-gradient(to right, $color-white 50%, #63a73a 50%);
+      right: 0%;
+      background-image: url("../img/index-background-desktop@1x.jpg"), linear-gradient(to right, #ffffff 50%, #63a73a 50%);
       background-size: 720px 696px, 100%;
-      background-position: calc(44% + 360px) top, center center;
+      background-position: calc(50% + 360px) top, center center;
       background-repeat: no-repeat;
     }
   }
 
   .intro__wrapper {
-    width: 1300px;
-    padding: 0 151px;
+    padding: 0 120px;
     padding-right: 610px;
-    margin: 0 auto;
   }
 
   .intro__main,
@@ -160,7 +160,7 @@
   .intro__form {
     padding-top: 16px;
     margin-bottom: 267px;
-    top: 0%;
-    left: 0%;
+    top: 0;
+    left: -1px;
   }
 }

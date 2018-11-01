@@ -98,6 +98,11 @@
   .example {
     padding: 0;
     margin: 0;
+    background: linear-gradient(to bottom, $color-white 57%, $color-light-grey 32%);
+  }
+
+  .example__box {
+    padding: 0;
   }
 
   .example__wrapper {
@@ -182,17 +187,13 @@
   }
 
   .example__box {
-    width: 1300px;
-    padding: 0;
-    margin: 0 auto;
+    padding: 0 40px;
     display: flex;
-    background-color: $color-white;
   }
 
   .example__wrapper {
     width: 48%;
     padding: 0;
-    padding-left: 72px;
     background: linear-gradient(to bottom, $color-white 33%, $color-light-grey 32%);
   }
 
@@ -202,7 +203,7 @@
 
   .example__text {
     padding-top: 146px;
-    padding-right: 120px;
+    padding-right: 150px;
   }
 
   .example__conteiner {
