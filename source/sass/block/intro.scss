@@ -1,9 +1,13 @@
 .intro {
-  padding: 0 20px;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-position: top;
   background-repeat: no-repeat;
   text-align: center;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+    background-size: 305px auto;
+  }
 }
 
 .intro__main {
@@ -71,7 +75,7 @@
     font-size: 60px;
     line-height: 60px;
     font-weight: normal;
-    padding-top: 64px;
+    padding-top: 51px;
     padding-left: 88px;
     padding-right: 200px;
   }
@@ -93,7 +97,7 @@
 
   .intro__form {
     position: absolute;
-    top: 293px;
+    top: 281px;
     left: 117px;
     width: 245px;
     padding: 16px 0;
@@ -119,6 +123,13 @@
       background-size: 720px 696px, 100%;
       background-position: calc(50% + 360px) top, center center;
       background-repeat: no-repeat;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/index-background-desktop@2x.jpg"), linear-gradient(to right, #ffffff 50%, #63a73a 50%);;
+        background-size: 720px 696px, 100%;
+        background-position: calc(50% + 360px) top, center center;
+        background-repeat: no-repeat;
+      }
     }
   }
 
