@@ -1,5 +1,4 @@
 .academy {
-  padding: 0 20px;
   padding-right: 13px;
   margin: 0;
   display: flex;
@@ -68,7 +67,7 @@
 
 @media (min-width: $desktop-width) {
   .academy__item {
-    padding-top: 13px;
+    padding-top: 18px;
   }
 
   .academy__adress {

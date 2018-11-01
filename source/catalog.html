@@ -11,9 +11,13 @@
       <header class="page-header wrapper">
         <div class="page-header__wrapper">
           <a class="page-header__logo" href="index.html">
-            <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Cat-Energy">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg 1x">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg 1x">
+              <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Cat-Energy">
+            </picture>
           </a>
-          <button class="page-header__toggle" type="button">Открыть меню</button>
+          <button class="page-header__toggle visually-hidden" type="button">Открыть меню</button>
         </div>
         <nav class="page-header__nav page-nav">
           <div class="page-nav__wrapper">
@@ -32,13 +36,17 @@
         </nav>
       </header>
       <main class="page-catalog">
-        <section class="products">
+        <section class="products wrapper">
           <h1 class="products__main">Каталог продукции</h1>
           <ul class="products__list">
             <li class="products__list-item product">
               <div class="product__wrapper">
                 <a class="product__image" href="">
-                  <img src="img/chicken-small-mobile@1x.jpg" width="140" height="144" alt="CAT ENERGY PRO 500 Г">
+                  <picture>
+                    <source media="(min-width: 1300px)" srcset="img/chicken-small-desktop@1x.png 1x">
+                    <source media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.png 1x">
+                    <img src="img/chicken-small-mobile@1x.jpg" alt="CAT ENERGY PRO 500 Г">
+                  </picture>
                 </a>
                 <div class="product__specification">
                   <a class="product__main" href="">CAT ENERGY PRO 500 Г</a>
@@ -283,12 +291,14 @@
         </div>
       </main>
       <footer class="page-footer">
-        <section class="cooperation">
-          <div class="cooperation__info">
-            <p class="cooperation__invite">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
-            <div class="cooperation__adress">
-              <p class="cooperation__adress--street">ул. Большая Конюшенная, д. 19/8</p>
-              <p class="cooperation__adress--city">Санкт-Петербург</p>
+        <section class="cooperation cooperation--catalog">
+          <div class="wrapper">
+            <div class="cooperation__info">
+              <p class="cooperation__invite">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
+              <div class="cooperation__adress">
+                <p class="cooperation__adress--street">ул. Большая Конюшенная, д. 19/8</p>
+                <p class="cooperation__adress--city">Санкт-Петербург</p>
+              </div>
             </div>
           </div>
           <div class="cooperation__map">

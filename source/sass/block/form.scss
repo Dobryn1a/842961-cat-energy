@@ -11,7 +11,7 @@
 .form__info-text {
   padding: 0 20px;
   padding-top: 25px;
-  padding-right: 74px;
+  padding-right: 30px;
   padding-bottom: 39px;
   margin: 0;
   font-size: 14px;
@@ -21,7 +21,7 @@
 }
 
 .form__row {
-  padding: 0;
+  padding: 0 20px;
   padding-bottom: 14px;
   margin: 0;
   display: flex;
@@ -43,6 +43,7 @@
 }
 
 .form__section--target {
+  padding: 0 19px;
   border: solid 1px #ededed;
 }
 
@@ -121,7 +122,7 @@
 }
 
 .form__input {
-  padding: 12px 15px;
+  padding: 12px 12px;
   margin: 0;
   font-size: 16px;
   line-height: 18px;
@@ -145,7 +146,6 @@
 }
 
 .form__section {
-  padding: 0 20px;
   margin: 0;
 }
 
@@ -153,7 +153,7 @@
   padding: 0;
   padding-top: 28px;
   padding-right: 80px;
-  padding-bottom: 35px;
+  padding-bottom: 34px;
   margin: 0;
   font-size: 24px;
   line-height: 24px;
@@ -169,7 +169,7 @@
   &::after {
     position: absolute;
     top: 18%;
-    right: 0%;
+    right: 19%;
     content: "";
     width: 99px;
     height: 3px;
@@ -211,7 +211,7 @@
 
 .form__main--comment {
   margin: 0;
-  padding: 13px 0;
+  padding: 15px 0;
   padding-bottom: 35px;
   position: relative;
 
@@ -284,7 +284,7 @@
 
 .form__label--checkbox .form__checkbox + .form__checkbox-indicator {
   position: absolute;
-  top: 10%;
+  top: -11%;
   left: 0%;
   width: 30px;
   height: 30px;
@@ -303,7 +303,7 @@
 .form__label--checkbox .form__checkbox:checked + .form__checkbox-indicator {
   content: "";
   position: absolute;
-  top: -12%;
+  top: -11%;
   left: 0%;
   width: 30px;
   height: 30px;
@@ -341,8 +341,7 @@
 .form__send-order {
   display: block;
   width: 280px;
-  height: 40px;
-  padding-top: 11px;
+  padding: 10px 0;
   font-size: 16px;
   line-height: 20px;
   color: $color-white;
@@ -363,7 +362,7 @@
   margin: 0;
   padding: 0;
   padding-top: 21px;
-  padding-bottom: 34px;
+  padding-bottom: 32px;
   text-align: center;
   font-family: $custome-font;
   font-size: 14px;
@@ -406,8 +405,8 @@
   }
 
   .form__section {
-    padding: 0 41px;
-    padding-right: 37px;
+    padding: 0 21px;
+    padding-right: 17px;
     margin: 0;
   }
 
@@ -661,7 +660,9 @@
   }
 
   .form__row {
+    padding: 0;
     padding-right: 40px;
+    padding-bottom: 17px;
   }
 
   .form__row--age {
@@ -707,7 +708,7 @@
     padding: 0;
     margin: 0;
     padding-right: 42px;
-    padding-bottom: 49px;
+    padding-bottom: 51px;
   }
 
   .form__section--contact-list {
