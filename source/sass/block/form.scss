@@ -22,14 +22,14 @@
 
 .form__row {
   padding: 0 20px;
-  padding-bottom: 14px;
+  padding-bottom: 15px;
   margin: 0;
   display: flex;
   align-items: center;
 }
 
 .form__row--age {
-  padding-bottom: 26px;
+  padding-bottom: 24px;
 }
 
 .form__label {
@@ -174,7 +174,6 @@
 }
 
 .form__section--contact {
-  padding: 0 20px;
   padding-bottom: 30px;
   margin: 0;
   position: relative;
@@ -217,7 +216,6 @@
 
 .form__section--comment {
   margin: 0;
-  padding: 0 20px;
   padding-bottom: 40px;
   position: relative;
   border-top: 3px solid #68b738;
@@ -263,7 +261,6 @@
 
 .form__section--optional {
   margin: 0;
-  padding: 0 20px;
   border-top: 3px solid #68b738;
 }
 
