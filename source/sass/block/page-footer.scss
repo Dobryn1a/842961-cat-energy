@@ -28,7 +28,8 @@
   }
 
   &:active {
-    fill: rgba(99, 167, 58, 0.3);
+    opacity: 0.3;
+    fill: $color-green;
   }
 }
 
