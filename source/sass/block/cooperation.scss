@@ -58,8 +58,8 @@
   &::after {
     content: "";
     position: absolute;
-    top: 234px;
-    left: 266px;
+    top: 261px;
+    left: 136px;
     background-color: transparent;
     background-image: url("../img/map-pin-mobile.png");
     background-position: top;
@@ -113,7 +113,15 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-map-tablet@2x.png");
-      background-size: 400px auto;
+      background-size: auto 400px;
+    }
+
+    &::after {
+      top: 331px;
+      left: 325px;
+      background-image: url("../img/map-pin.png");
+      width: 113px;
+      height: 106px;
     }
   }
 
@@ -138,7 +146,7 @@
     top: 98px;
     left: 40px;
     background-color: $color-white;
-    padding-top: 63px;
+    padding-top: 60px;
     padding-left: 76px;
     padding-bottom: 59px;
     padding-right: 84px;
@@ -160,7 +168,12 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-map-desktop@2x.png");
-      background-size: 400px auto;
+      background-size: auto 400px;
+    }
+
+    &::after {
+      top: 150px;
+      left: 937px;
     }
   }
 }
