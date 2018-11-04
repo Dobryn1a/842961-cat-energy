@@ -10,6 +10,11 @@
   font-size: 16px;
   line-height: 20px;
   color: $color-white;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+    background-size: 289px auto;
+  }
 }
 
 .gift__text {
@@ -22,8 +27,8 @@
 
   &::after {
     position: absolute;
-    top: 22%;
-    left: 39%;
+    top: 65px;
+    left: 112px;
     width: 56px;
     height: 61px;
     content: "";
@@ -37,12 +42,17 @@
 @media (min-width: $tablet-width) {
   .gift {
     padding: 0;
-    margin: 0  30px;
+    margin: 0;
     margin-top: 69px;
-    margin-bottom: 79px;
+    margin-bottom: 75px;
     background-image: url("../img/gift-photo-tablet@1x.jpg");
     width: 708px;
     height: 200px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+      background-size: 100% auto;
+    }
   }
 
   .gift__text {
@@ -61,10 +71,15 @@
   .gift {
     padding: 0;
     margin: 0;
-    margin-left: 46px;
+    margin-left: 80px;
     background-image: url("../img/gift-photo-desktop@1x.jpg");
     width: 245px;
     height: 289px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
+      background-size: 289px auto;
+    }
   }
 
   .gift__text {

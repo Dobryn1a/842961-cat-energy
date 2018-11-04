@@ -1,4 +1,5 @@
 .cooperation {
+  position: relative;
   background-color: $color-white;
 }
 
@@ -7,8 +8,6 @@
 }
 
 .cooperation__info {
-  padding: 0 20px;
-  margin: 0;
   display: flex;
 }
 
@@ -50,9 +49,29 @@
   width: 100%;
   height: 362px;
   border: 0;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-map-mobile@2x.png");
+    background-size: 362px auto;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 261px;
+    left: 136px;
+    background-color: transparent;
+    background-image: url("../img/map-pin-mobile.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 55px;
+    height: 53px;
+  }
 }
 
 .cooperation__map--iframe {
+  position: relative;
+  z-index: 1;
   border: 0;
   width: 100%;
   height: 362px;
@@ -60,12 +79,12 @@
 
 @media (min-width: $tablet-width) {
   .cooperation__info {
-    padding: 0 70px;
+    padding: 0 72px;
   }
 
   .cooperation__invite {
-    padding-top: 63px;
-    padding-bottom: 62px;
+    padding-top: 65px;
+    padding-bottom: 57px;
     padding-right: 240px;
     font-size: 20px;
     line-height: 25px;
@@ -73,7 +92,7 @@
 
   .cooperation__adress {
     padding: 0;
-    padding-top: 61px;
+    padding-top: 63px;
     text-align: right;
     font-size: 16px;
     line-height: 20px;
@@ -85,12 +104,25 @@
 
   .cooperation__map {
     background-color: $color-white;
-    background-image: url("../img/bg-map-mobile@1x.png");
+    background-image: url("../img/bg-map-tablet@1x.png");
     background-position: top;
     background-repeat: no-repeat;
     width: 100%;
     height: 400px;
     border: 0;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-map-tablet@2x.png");
+      background-size: auto 400px;
+    }
+
+    &::after {
+      top: 331px;
+      left: 325px;
+      background-image: url("../img/map-pin.png");
+      width: 113px;
+      height: 106px;
+    }
   }
 
   .cooperation__map--iframe {
@@ -110,10 +142,11 @@
     width: 570px;
     height: 201px;
     position: absolute;
-    top: 25%;
-    left: 6%;
+    z-index: 2;
+    top: 98px;
+    left: 40px;
     background-color: $color-white;
-    padding-top: 63px;
+    padding-top: 60px;
     padding-left: 76px;
     padding-bottom: 59px;
     padding-right: 84px;
@@ -128,5 +161,19 @@
   .cooperation__adress {
     padding: 0;
     text-align: left;
+  }
+
+  .cooperation__map {
+    background-image: url("../img/bg-map-desktop@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-map-desktop@2x.png");
+      background-size: auto 400px;
+    }
+
+    &::after {
+      top: 150px;
+      left: 937px;
+    }
   }
 }

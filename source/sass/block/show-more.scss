@@ -74,7 +74,7 @@
     padding-right: 14px;
     padding-bottom: 40px;
     text-align: center;
-    margin-bottom: 66px;
+    margin-bottom: 0;
     width: 324px;
   }
 
@@ -120,6 +120,7 @@
 
 @media (min-width: $desktop-width) {
   .show-more {
+    margin-bottom: 66px;
     width: 245px;
   }
 

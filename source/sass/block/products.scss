@@ -1,6 +1,6 @@
 .products {
-  margin: 0;
   padding: 0;
+  padding-bottom: 41px;
 }
 
 .products__main {
@@ -22,13 +22,13 @@
 
 @media (min-width: $tablet-width) {
   .products {
-    padding-bottom: 20px;
+    padding-bottom: 86px;
   }
 
   .products__main {
     margin: 0;
     padding: 0 30px;
-    padding-top: 64px;
+    padding-top: 53px;
     padding-bottom: 165px;
     font-size: 60px;
     line-height: 60px;
@@ -53,7 +53,7 @@
   }
 
   .products__list-item--last-child {
-    margin-bottom: 66px;
+    margin: 0;
   }
 }
 
@@ -62,12 +62,12 @@
     width: 1300px;
     padding: 0;
     margin: 0 auto;
-    padding-bottom: 30px;
+    padding-bottom: 27px;
   }
 
   .products__main {
     padding: 0 40px;
-    padding-top: 80px;
+    padding-top: 68px;
     padding-bottom: 165px;
   }
 

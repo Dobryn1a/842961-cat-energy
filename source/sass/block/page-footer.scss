@@ -4,7 +4,7 @@
 
 .page-footer__logo {
   display: block;
-  padding: 0 96px;
+  padding: 0 76px;
   padding-bottom: 29px;
   padding-top: 38px;
 
@@ -17,6 +17,27 @@
   }
 }
 
+.copyright__item--vk,
+.copyright__item--instagram,
+.copyright__item--facebook,
+.academy__logo {
+  fill: #666666;
+
+  &:hover {
+    fill: $color-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+    fill: $color-green;
+  }
+}
+
+.page-footer__logo--name {
+  width: 128px;
+  height: 24px;
+}
+
 @media (min-width: $tablet-width) {
   .page-footer {
     margin: 0;
@@ -25,6 +46,7 @@
 
   .page-footer__wrapper {
     padding: 0 30px;
+    padding-top: 4px;
     padding-right: 24px;
     display: flex;
     justify-content: space-between;
@@ -45,13 +67,11 @@
 
 @media (min-width: $desktop-width) {
   .page-footer__wrapper {
-    width: 1300px;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    padding: 0 71px;
-    padding-right: 4px;
-    padding-top: 5px;
+    padding: 0 40px;
+    padding-top: 3px;
+    padding-right: 33px;
   }
 
   .page-footer__copyright {

@@ -1,6 +1,6 @@
 .page-header {
+  width: auto;
   padding: 0;
-  margin: 0;
 }
 
 .page-header__wrapper {
@@ -10,9 +10,12 @@
 }
 
 .page-header__logo {
-  padding-left: 20px;
-  padding-top: 11px;
-  padding-bottom: 14px;
+  width: 191px;
+  height: 39px;
+  padding-top: 13px;
+  margin: 0 auto;
+  margin-bottom: 28px;
+  transform: translateX(-24%);
 
   &:hover {
     opacity: 0.8;
@@ -58,6 +61,7 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
+    width: 768px;
     padding: 0 30px;
     display: flex;
     justify-content: space-between;
@@ -68,8 +72,11 @@
   }
 
   .page-header__logo {
+    width: 174px;
+    height: 59px;
     padding: 0;
     padding-top: 24px;
+    transform: none;
   }
 
   .page-header__toggle {
@@ -80,14 +87,17 @@
 @media (min-width: $desktop-width) {
   .page-header {
     width: 1300px;
-    padding: 0 59px;
+    padding: 0 40px;
     padding-top: 31px;
-    padding-right: 44px;
-    margin: 0 auto;
   }
 
   .page-header__wrapper {
     position: relative;
     z-index: 2;
+  }
+
+  .page-header__logo {
+    width: 203px;
+    height: 60px;
   }
 }

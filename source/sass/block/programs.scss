@@ -1,24 +1,21 @@
-.programs {
-  padding: 0 20px;
-  padding-top: 23px;
-}
-
 .programs__list {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
+.programs__wrapper {
+  padding-top: 23px;
+}
+
 @media (min-width: $tablet-width) {
-  .programs {
-    padding: 0 30px;
+  .programs__wrapper {
+    padding: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .programs {
-    width: 1300px;
-    padding: 0 10px;
-    margin: 0 auto;
+  .programs__wrapper {
+    padding: 0;
   }
 }

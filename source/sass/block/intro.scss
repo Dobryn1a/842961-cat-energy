@@ -1,9 +1,15 @@
 .intro {
-  padding: 0 20px;
-  background-image: url("../img/index-background-mobile@1x.jpg");
-  background-position: top;
-  background-repeat: no-repeat;
   text-align: center;
+  background-image: url("../img/index-background-mobile@1x.jpg"), linear-gradient(to right, #63a73a 50%, #63a73a 50%);
+  background-size: 305px 320px, 100% 67%;
+  background-position: top, top center;
+  background-repeat: no-repeat;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg"), linear-gradient(to right, #63a73a 50%, #63a73a 50%);
+    background-size: 305px 320px, 100% 67%;
+    background-position: top, top center;
+  }
 }
 
 .intro__main {
@@ -33,8 +39,7 @@
 .intro__form {
   display: block;
   width: 280px;
-  height: 40px;
-  padding: 11px;
+  padding: 10px;
   font-size: 14px;
   line-height: 18px;
   color: $color-white;
@@ -47,16 +52,19 @@
   }
 
   &:active {
-    opacity: 0.3;
+    color: rgba(255, 255, 255, 0.3);
     background-color: #5eaa2f;
   }
 }
 
 @media (min-width: $tablet-width) {
   .intro {
-    padding: 0 30px;
+    padding: 0;
     background-image: none;
     text-align: left;
+  }
+
+  .intro__wrapper {
     position: relative;
   }
 
@@ -69,7 +77,7 @@
     font-size: 60px;
     line-height: 60px;
     font-weight: normal;
-    padding-top: 64px;
+    padding-top: 51px;
     padding-left: 88px;
     padding-right: 200px;
   }
@@ -91,11 +99,10 @@
 
   .intro__form {
     position: absolute;
-    top: 34%;
-    left: 15%;
+    top: 281px;
+    left: 117px;
     width: 245px;
-    height: 52px;
-    padding: 12px;
+    padding: 16px 0;
     font-size: 20px;
     line-height: 20px;
   }
@@ -104,6 +111,7 @@
 @media (min-width: $desktop-width) {
   .intro {
     position: relative;
+    padding: 0;
 
     &::after {
       width: 100%;
@@ -111,20 +119,25 @@
       content: "";
       position: absolute;
       z-index: 1;
-      top: -27%;
-      right: -5%;
-      background-image: url("../img/index-background-desktop@1x.jpg"), linear-gradient(to right, $color-white 50%, #63a73a 50%);
+      top: -31%;
+      right: 0%;
+      background-image: url("../img/index-background-desktop@1x.jpg"), linear-gradient(to right, #ffffff 50%, #63a73a 50%);
       background-size: 720px 696px, 100%;
-      background-position: calc(44% + 360px) top, center center;
+      background-position: calc(50% + 360px) top, center center;
       background-repeat: no-repeat;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/index-background-desktop@2x.jpg"), linear-gradient(to right, #ffffff 50%, #63a73a 50%);
+        background-size: 720px 696px, 100%;
+        background-position: calc(50% + 360px) top, center center;
+        background-repeat: no-repeat;
+      }
     }
   }
 
   .intro__wrapper {
-    width: 1300px;
-    padding: 0 151px;
+    padding: 0 120px;
     padding-right: 610px;
-    margin: 0 auto;
   }
 
   .intro__main,
@@ -136,7 +149,7 @@
 
   .intro__main {
     padding: 0;
-    padding-top: 113px;
+    padding-top: 103px;
   }
 
   .intro__text {
@@ -151,8 +164,8 @@
     content: "";
     z-index: 3;
     position: absolute;
-    top: 9%;
-    right: 16%;
+    top: 6%;
+    right: 20%;
     width: 552px;
     height: 499px;
   }
@@ -160,7 +173,7 @@
   .intro__form {
     padding-top: 16px;
     margin-bottom: 267px;
-    top: 0%;
-    left: 0%;
+    top: 0;
+    left: -1px;
   }
 }

@@ -11,7 +11,7 @@
 .form__info-text {
   padding: 0 20px;
   padding-top: 25px;
-  padding-right: 74px;
+  padding-right: 30px;
   padding-bottom: 39px;
   margin: 0;
   font-size: 14px;
@@ -21,15 +21,15 @@
 }
 
 .form__row {
-  padding: 0;
-  padding-bottom: 14px;
+  padding: 0 20px;
+  padding-bottom: 15px;
   margin: 0;
   display: flex;
   align-items: center;
 }
 
 .form__row--age {
-  padding-bottom: 26px;
+  padding-bottom: 24px;
 }
 
 .form__label {
@@ -43,6 +43,7 @@
 }
 
 .form__section--target {
+  padding: 0 19px;
   border: solid 1px #ededed;
 }
 
@@ -121,7 +122,7 @@
 }
 
 .form__input {
-  padding: 12px 15px;
+  padding: 12px 12px;
   margin: 0;
   font-size: 16px;
   line-height: 18px;
@@ -139,41 +140,44 @@
   }
 
   &:active {
-    border: 2px solid $color-text-light-grey;
+    border: 1px solid $color-text-light-grey;
+    box-shadow: 0 0 0 2px $color-text-light-grey;
+  }
+
+  &:invalid {
+    box-shadow: 0 0 0 2px #ff8282;
   }
 }
 
+.wrapper--form {
+  padding-bottom: 42px;
+}
+
 .form__section {
-  padding: 0 20px;
   margin: 0;
 }
 
 .form__main {
+  position: relative;
   padding: 0;
-  padding-top: 28px;
-  padding-right: 80px;
-  padding-bottom: 35px;
+  padding-bottom: 17px;
   margin: 0;
+  padding-left: 19px;
+  margin-left: -19px;
+  margin-right: 78px;
   font-size: 24px;
   line-height: 24px;
   color: $color-text-dark-grey;
   font-weight: normal;
+  transform: translateY(-26%);
+  background-color: $color-white;
 }
 
 .form__section--contact {
-  padding: 0 20px;
+  padding-bottom: 30px;
   margin: 0;
   position: relative;
-
-  &::after {
-    position: absolute;
-    top: 18%;
-    right: 0%;
-    content: "";
-    width: 99px;
-    height: 3px;
-    background-color: $color-green;
-  }
+  border-top: 3px solid #68b738;
 }
 
 .form__contact-item {
@@ -186,7 +190,7 @@
 }
 
 .form__input--contact-list {
-  padding-right: 40px;
+  padding-right: 20px;
   margin: 0;
 }
 
@@ -199,41 +203,46 @@
   top: 21%;
   left: 88%;
   background-color: transparent;
-  fill: $color-text-medium-grey;
   border: 0;
+
+  &:active {
+    fill: rgba(99, 167, 58, 0.3);
+  }
+
+  &:invalid {
+    fill: rgb(255, 130, 130);
+  }
 }
 
 .form__section--comment {
   margin: 0;
-  padding: 0 20px;
+  padding-bottom: 40px;
+  position: relative;
+  border-top: 3px solid #68b738;
 }
 
 .form__main--comment {
   margin: 0;
-  padding: 13px 0;
-  padding-bottom: 35px;
+  padding: 0;
+  padding-bottom: 18px;
+  padding-left: 19px;
+  margin-left: -19px;
+  margin-right: 137px;
   position: relative;
-
-  &::after {
-    position: absolute;
-    top: 38%;
-    right: -7%;
-    content: "";
-    width: 158px;
-    height: 3px;
-    background-color: $color-green;
-  }
+  transform: translateY(-40%);
+  background-color: $color-white;
 }
 
 .form__comment--input {
   min-width: 280px;
   min-height: 150px;
-  padding: 10px 13px;
-  padding-top: 13px;
+  padding: 9px 12px;
+  padding-top: 12px;
   font-size: 16px;
   line-height: 18px;
   color: $color-text-light-grey;
   text-transform: uppercase;
+  border: 1px solid #e6e6e6;
 
   @include placeholder {
     color: $color-text-light-grey;
@@ -245,30 +254,26 @@
   }
 
   &:active {
-    border: 2px solid $color-text-light-grey;
+    border: 1px solid $color-text-light-grey;
+    box-shadow: 0 0 0 2px $color-text-light-grey;
   }
 }
 
 .form__section--optional {
   margin: 0;
-  padding: 0 20px;
+  border-top: 3px solid #68b738;
 }
 
 .form__main--optional {
   margin: 0;
-  padding: 26px 0;
-  padding-bottom: 41px;
+  padding: 0;
   position: relative;
-
-  &::after {
-    position: absolute;
-    top: 44%;
-    right: -7%;
-    content: "";
-    width: 136px;
-    height: 3px;
-    background-color: $color-green;
-  }
+  padding-bottom: 24px;
+  padding-left: 19px;
+  margin-left: -19px;
+  margin-right: 117px;
+  transform: translateY(-36%);
+  background-color: $color-white;
 }
 
 .form__label--checkbox {
@@ -282,7 +287,7 @@
 
 .form__label--checkbox .form__checkbox + .form__checkbox-indicator {
   position: absolute;
-  top: -12%;
+  top: -11%;
   left: 0%;
   width: 30px;
   height: 30px;
@@ -301,7 +306,7 @@
 .form__label--checkbox .form__checkbox:checked + .form__checkbox-indicator {
   content: "";
   position: absolute;
-  top: -12%;
+  top: -11%;
   left: 0%;
   width: 30px;
   height: 30px;
@@ -331,7 +336,6 @@
 }
 
 .form__section-wrapper {
-  margin: 0;
   padding: 0 20px;
   padding-top: 17px;
   text-align: center;
@@ -340,8 +344,7 @@
 .form__send-order {
   display: block;
   width: 280px;
-  height: 40px;
-  padding-top: 11px;
+  padding: 10px 0;
   font-size: 16px;
   line-height: 20px;
   color: $color-white;
@@ -362,7 +365,7 @@
   margin: 0;
   padding: 0;
   padding-top: 21px;
-  padding-bottom: 34px;
+  padding-bottom: 32px;
   text-align: center;
   font-family: $custome-font;
   font-size: 14px;
@@ -372,16 +375,16 @@
 
 @media (min-width: $tablet-width) {
   .form__info-main {
-    padding: 0 30px;
-    padding-top: 63px;
+    padding: 0;
+    padding-top: 53px;
     font-size: 60px;
     line-height: 60px;
   }
 
   .form__info-text {
-    padding: 0 70px;
+    padding-left: 40px;
     padding-top: 56px;
-    padding-right: 350px;
+    padding-right: 300px;
     padding-bottom: 65px;
     font-size: 20px;
     line-height: 30px;
@@ -405,7 +408,8 @@
   }
 
   .form__section {
-    padding: 0 70px;
+    padding: 0 21px;
+    padding-right: 17px;
     margin: 0;
   }
 
@@ -421,7 +425,7 @@
     padding: 0 87px;
     padding-top: 32px;
     padding-bottom: 33px;
-    margin: 0 70px;
+    margin: 0 40px;
     display: block;
   }
 
@@ -437,16 +441,16 @@
   }
 
   .form__label--target .form__radio + .form__radio-indicator {
-    top: -24%;
-    left: -13%;
+    top: -10px;
+    left: -59px;
     width: 40px;
     height: 40px;
     border-radius: 40px;
   }
 
   .form__label--target .form__radio:checked + .form__radio-indicator {
-    top: -15%;
-    left: -13%;
+    top: -10px;
+    left: -59px;
     width: 40px;
     height: 40px;
     border-radius: 40px;
@@ -471,14 +475,10 @@
     padding: 0;
     border-top: 3px solid #68b738;
     padding-bottom: 68px;
-
-    &::after {
-      display: none;
-    }
   }
 
   .form__wrapper {
-    padding-bottom: 97px;
+    padding-bottom: 54px;
   }
 
   .form__main--contact {
@@ -487,14 +487,15 @@
     display: inline-block;
     position: relative;
     padding: 0;
+    margin: 0;
     padding-left: 39px;
     padding-right: 42px;
-    margin-left: 30px;
-    padding-bottom: 48px;
+    padding-bottom: 49px;
   }
 
   .form__section--contact-list {
-    padding: 0 70px;
+    padding: 0 40px;
+    padding-right: 36px;
   }
 
   .form__input--contact-list {
@@ -523,20 +524,16 @@
     display: inline-block;
     position: relative;
     padding: 0;
+    margin: 0;
     padding-left: 39px;
     padding-right: 42px;
-    margin-left: 30px;
-    padding-bottom: 52px;
-
-    &::after {
-      display: none;
-    }
+    padding-bottom: 50px;
   }
 
   .form__comment--wrapper {
     padding: 0;
-    padding-right: 67px;
-    padding-left: 71px;
+    padding-right: 37px;
+    padding-left: 40px;
   }
 
   .form__comment--input {
@@ -563,9 +560,9 @@
     display: inline-block;
     position: relative;
     padding: 0;
+    margin: 0;
     padding-left: 39px;
     padding-right: 42px;
-    margin-left: 30px;
     padding-bottom: 40px;
 
     &::after {
@@ -577,7 +574,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0 70px;
+    padding: 0 40px;
   }
 
   .form__label--checkbox {
@@ -633,20 +630,15 @@
 }
 
 @media (min-width: $desktop-width) {
-  .form__container {
-    width: 1300px;
-    margin: 0 auto;
-  }
-
   .form__info-main {
-    padding: 0 40px;
-    padding-top: 80px;
+    padding: 0;
+    padding-top: 68px;
   }
 
   .form__info-text {
-    padding: 0 40px;
+    padding: 0;
     padding-top: 56px;
-    padding-right: 85px;
+    padding-right: 120px;
     padding-bottom: 65px;
     width: 500px;
   }
@@ -654,8 +646,12 @@
   .form__wrapper {
     display: flex;
     justify-content: space-between;
-    padding: 0 40px;
+    padding: 0;
     padding-bottom: 23px;
+  }
+
+  .wrapper--form {
+    padding-bottom: 2px;
   }
 
   .form__section {
@@ -666,7 +662,9 @@
   }
 
   .form__row {
+    padding: 0;
     padding-right: 40px;
+    padding-bottom: 17px;
   }
 
   .form__row--age {
@@ -710,18 +708,17 @@
   .form__main--contact {
     transform: translateY(-29%);
     padding: 0;
+    margin: 0;
+    margin-left: -40px;
     padding-left: 39px;
     padding-right: 42px;
-    margin-left: 112px;
-    padding-bottom: 50px;
+    padding-bottom: 51px;
   }
 
   .form__section--contact-list {
-    width: 1300px;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    padding: 0 41px;
+    padding: 0 1px;
   }
 
   .form__contact-item {
@@ -766,16 +763,15 @@
   .form__main--comment {
     transform: translateY(-28%);
     padding: 0;
-    padding-left: 40px;
-    padding-right: 42px;
-    margin-left: 111px;
+    margin: 0;
+    margin-left: -40px;
+    padding-left: 39px;
+    padding-right: 39px;
     padding-bottom: 52px;
   }
 
   .form__comment--wrapper {
-    width: 1300px;
-    margin: 0 auto;
-    padding: 0 40px;
+    padding: 0;
   }
 
   .form__comment--input {
@@ -792,18 +788,17 @@
   .form__main--optional {
     transform: translateY(-33%);
     padding: 0;
-    padding-left: 40px;
+    margin: 0;
+    margin-left: -40px;
+    padding-left: 39px;
     padding-right: 42px;
-    margin-left: 111px;
     padding-bottom: 41px;
   }
 
   .form__section--optional-wrapper {
-    width: 1300px;
-    margin: 0 auto;
     flex-wrap: nowrap;
     justify-content: space-between;
-    padding: 0 40px;
+    padding: 0;
   }
 
   .form__label--checkbox {
@@ -811,8 +806,6 @@
   }
 
   .form__section-wrapper {
-    width: 1300px;
-    margin: 0 auto;
     padding: 0 40px;
   }
 

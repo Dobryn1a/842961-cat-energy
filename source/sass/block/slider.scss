@@ -7,6 +7,11 @@
   background-image: url("../img/before-mobile@1x.png");
   background-position: 50% 26%;
   background-repeat: no-repeat;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/before-mobile@2x.png");
+    background-size: 317px auto;
+  }
 }
 
 .slider__wrapper {
@@ -28,7 +33,7 @@
   }
 
   &:active {
-    border-bottom: none;
+    border-bottom: transparent;
   }
 }
 
@@ -54,7 +59,7 @@
 
 .slider__toggle {
   position: absolute;
-  top: 30%;
+  top: 29%;
   left: 7%;
   border: none;
   font-size: 0;
@@ -70,12 +75,14 @@
     padding: 0;
     font-size: 20px;
     line-height: 20px;
+    background-image: none;
   }
 
   .slider__image {
     display: flex;
-    padding-top: 42px;
-    background: linear-gradient(to bottom, $color-white 38%, #eaeaea 38%);
+    justify-content: space-between;
+    padding-top: 44px;
+    background-color: $color-white;
   }
 
   .slider__image--before {
@@ -83,31 +90,47 @@
     height: 550px;
     content: "";
     background-image: url("../img/before-tablet@1x.png"), linear-gradient(to bottom, $color-white 33%, $color-light-grey 33%);
-    background-position: -16% 40%;
+    background-position: -15% 45%;
     background-repeat: no-repeat;
+    overflow: hidden;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/before-tablet@2x.png"), linear-gradient(to bottom, $color-white 33%, $color-light-grey 33%);
+      background-size: auto 100%;
+      background-position: 0% 45%;
+    }
   }
 
   .slider__image--after {
     width: 50%;
     height: 550px;
     content: "";
-    background-image: url("../img/after-tablet@1x.png");
+    background-image: url("../img/after-tablet@1x.png"), linear-gradient(to bottom, $color-white 33%, #eaeaea 33%);
     background-position: 111% 45%;
     background-repeat: no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/after-tablet@2x.png"), linear-gradient(to bottom, $color-white 33%, #eaeaea 33%);
+      background-size: auto 100%;
+      background-position: 106% 45%;
+    }
   }
 
   .slider__wrapper {
     background: linear-gradient(to right, $color-light-grey 50%, #eaeaea 50%);
+    justify-content: space-between;
+    padding: 0 99px;
+    padding-bottom: 69px;
   }
 
   .slider__item {
     padding: 0;
+    margin: 0;
     padding-bottom: 4px;
-    margin-bottom: 70px;
   }
 
   .slider__item--before {
-    margin-right: 25px;
+    margin: 0;
   }
 
   .slider__item--after {
@@ -128,8 +151,8 @@
 
   .slider__toggle {
     position: absolute;
-    top: -225%;
-    left: 46%;
+    top: -14px;
+    left: 198px;
     font-size: 0;
     width: 34px;
     height: 34px;
@@ -141,12 +164,21 @@
     &::after {
       content: "";
       position: absolute;
-      top: 35%;
-      left: 38%;
+      top: 12px;
+      left: 12px;
       width: 8px;
       height: 8px;
       border-radius: 8px;
       background-color: $color-green;
+    }
+
+    &:hover {
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    &:active {
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
+      border: solid 2px #68b738;
     }
   }
 }
@@ -154,35 +186,45 @@
 @media (min-width: $desktop-width) {
   .slider {
     padding: 0;
-    width: 52%;
-    background: linear-gradient(to bottom, $color-white 33%, $color-light-grey 32%);
+    width: 50%;
+    background: linear-gradient(to bottom, $color-white 29%, $color-light-grey 6%);
   }
 
   .slider__image {
     display: flex;
-    padding-left: 53px;
     padding-top: 2px;
     background: none;
   }
 
   .slider__image--before {
-    width: 55%;
-    background-image: url("../img/before-tablet@1x.png"), linear-gradient(to bottom, $color-white 40%, $color-light-grey 39%);
-    background-position: 11% 73%;
+    width: 53%;
+    background-image: url("../img/before-desktop@1x.png"), linear-gradient(to bottom, $color-white 35%, $color-light-grey 33%);
+    background-position: 10% 67%;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/before-desktop@2x.png"), linear-gradient(to bottom, $color-white 35%, $color-light-grey 33%);
+      background-size: 690px auto;
+      background-position: 10% 45%;
+    }
   }
 
   .slider__image--after {
-    background-image: url("../img/after-tablet@1x.png"), linear-gradient(to bottom, $color-white 40%, #eaeaea 39%);
-    background-position: 92% 71%;
+    width: 47%;
+    background-image: url("../img/after-desktop@1x.png"), linear-gradient(to bottom, $color-white 35%, #eaeaea 33%);
+    background-position: 90% 71%;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/after-desktop@2x.png"), linear-gradient(to bottom, $color-white 35%, #eaeaea 33%);
+      background-size: 690px auto;
+      background-position: 86% 45%;
+    }
   }
 
   .slider__wrapper {
+    padding: 0;
     padding-top: 28px;
-    padding-left: 86px;
-    background: linear-gradient(to right, #f2f2f2 56%, #eaeaea 50%);
-  }
-
-  .slider__item {
-    margin-bottom: 64px;
+    padding-bottom: 66px;
+    padding-left: 40px;
+    background: linear-gradient(to right, #f2f2f2 53%, #eaeaea 50%);
   }
 }
