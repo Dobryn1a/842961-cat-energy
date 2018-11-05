@@ -1,13 +1,13 @@
 .intro {
   text-align: center;
   background-image: url("../img/index-background-mobile@1x.jpg"), linear-gradient(to right, #63a73a 50%, #63a73a 50%);
-  background-size: 305px 320px, 100% 67%;
+  background-size: 319px 306px, 100% 64%;
   background-position: top, top center;
   background-repeat: no-repeat;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/index-background-mobile@2x.jpg"), linear-gradient(to right, #63a73a 50%, #63a73a 50%);
-    background-size: 305px 320px, 100% 67%;
+    background-size: 319px 306px, 100% 64%;
     background-position: top, top center;
   }
 }

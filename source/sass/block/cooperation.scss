@@ -36,8 +36,8 @@
   color: $color-text-light-grey;
 }
 
-.cooperation__adress--street,
-.cooperation__adress--city {
+.cooperation__adress-street,
+.cooperation__adress-city {
   margin: 0;
 }
 
@@ -69,7 +69,7 @@
   }
 }
 
-.cooperation__map--iframe {
+.cooperation__map-iframe {
   position: relative;
   z-index: 1;
   border: 0;
@@ -98,7 +98,7 @@
     line-height: 20px;
   }
 
-  .cooperation__adress--street {
+  .cooperation__adress-street {
     padding-bottom: 20px;
   }
 
@@ -125,7 +125,7 @@
     }
   }
 
-  .cooperation__map--iframe {
+  .cooperation__map-iframe {
     border: 0;
     width: 100%;
     height: 400px;
