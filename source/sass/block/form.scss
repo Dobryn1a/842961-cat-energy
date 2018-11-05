@@ -124,12 +124,14 @@
 .form__input {
   padding: 12px 12px;
   margin: 0;
+  height: 45px;
   font-size: 16px;
   line-height: 18px;
   color: $color-text-light-grey;
   border: 1px solid #e6e6e6;
   text-transform: uppercase;
   flex-grow: 1;
+  width: 50%;
 
   @include placeholder {
     color: $color-text-light-grey;
@@ -150,6 +152,7 @@
 }
 
 .wrapper--form {
+  padding: 0;
   padding-bottom: 42px;
 }
 
@@ -233,7 +236,7 @@
   background-color: $color-white;
 }
 
-.form__comment--input {
+.form__comment-input {
   min-width: 280px;
   min-height: 150px;
   padding: 9px 12px;
@@ -342,7 +345,7 @@
 }
 
 .form__send-order {
-  display: block;
+  border: none;
   width: 280px;
   padding: 10px 0;
   font-size: 16px;
@@ -356,7 +359,7 @@
   }
 
   &:active {
-    opacity: 0.3;
+    color: rgba(255, 255, 255, 0.3);
     background-color: #5eaa2f;
   }
 }
@@ -402,6 +405,7 @@
 
   .form__input {
     padding: 11px 17px;
+    height: 52px;
     margin: 0;
     font-size: 20px;
     line-height: 20px;
@@ -481,6 +485,10 @@
     padding-bottom: 54px;
   }
 
+  .wrapper--form {
+    padding: 0 30px;
+  }
+
   .form__main--contact {
     transform: translateY(-30%);
     background-color: $color-white;
@@ -493,7 +501,7 @@
     padding-bottom: 49px;
   }
 
-  .form__section--contact-list {
+  .form__section-contact-list {
     padding: 0 40px;
     padding-right: 36px;
   }
@@ -530,13 +538,13 @@
     padding-bottom: 50px;
   }
 
-  .form__comment--wrapper {
+  .form__comment-wrapper {
     padding: 0;
     padding-right: 37px;
     padding-left: 40px;
   }
 
-  .form__comment--input {
+  .form__comment-input {
     width: 100%;
     min-height: 174px;
     padding: 8px 17px;
@@ -570,7 +578,7 @@
     }
   }
 
-  .form__section--optional-wrapper {
+  .form__section-optional-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -581,7 +589,7 @@
     width: 285px;
     margin: 0;
     padding-left: 59px;
-    padding-bottom: 54px;
+    margin-bottom: 54px;
   }
 
   .form__label--checkbox .form__checkbox + .form__checkbox-indicator {
@@ -613,7 +621,7 @@
   .form__send-order {
     width: 282px;
     height: 51px;
-    padding-top: 14px;
+    padding-top: 8px;
     font-size: 20px;
     line-height: 20px;
   }
@@ -651,6 +659,7 @@
   }
 
   .wrapper--form {
+    padding: 0 42px;
     padding-bottom: 2px;
   }
 
@@ -715,7 +724,7 @@
     padding-bottom: 51px;
   }
 
-  .form__section--contact-list {
+  .form__section-contact-list {
     display: flex;
     justify-content: space-between;
     padding: 0 1px;
@@ -774,7 +783,7 @@
     padding: 0;
   }
 
-  .form__comment--input {
+  .form__comment-input {
     padding: 9px 18px;
   }
 
@@ -795,7 +804,7 @@
     padding-bottom: 41px;
   }
 
-  .form__section--optional-wrapper {
+  .form__section-optional-wrapper {
     flex-wrap: nowrap;
     justify-content: space-between;
     padding: 0;
@@ -812,7 +821,7 @@
   .form__send-order {
     width: 569px;
     height: 52px;
-    padding-top: 15px;
+    padding-top: 8px;
     font-size: 20px;
     line-height: 20px;
   }

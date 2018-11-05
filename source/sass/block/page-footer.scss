@@ -17,23 +17,7 @@
   }
 }
 
-.copyright__item--vk,
-.copyright__item--instagram,
-.copyright__item--facebook,
-.academy__logo {
-  fill: #666666;
-
-  &:hover {
-    fill: $color-green;
-  }
-
-  &:active {
-    opacity: 0.3;
-    fill: $color-green;
-  }
-}
-
-.page-footer__logo--name {
+.page-footer__logo-name {
   width: 128px;
   height: 24px;
 }

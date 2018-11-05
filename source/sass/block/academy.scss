@@ -21,22 +21,25 @@
 }
 
 .academy__adress {
+  width: 33px;
+  height: 45px;
   padding-top: 17px;
+  fill: #666666;
+
+  &:hover {
+    fill: $color-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+    fill: $color-green;
+  }
 }
 
 .academy__logo {
   padding: 0;
   width: 41px;
   height: 45px;
-
-  &:hover {
-    fill: #68b738;
-  }
-
-  &:active {
-    fill: #68b738;
-    opacity: 0.3;
-  }
 }
 
 @media (min-width: $tablet-width) {

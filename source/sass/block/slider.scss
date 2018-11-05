@@ -26,7 +26,6 @@
   text-transform: uppercase;
   border: none;
   background-color: $color-light-grey;
-  border-bottom: 1px dashed #bebebe;
 
   &:hover {
     border-bottom: 1px solid #989898;
@@ -81,11 +80,11 @@
   .slider__image {
     display: flex;
     justify-content: space-between;
-    padding-top: 44px;
+    padding-top: 54px;
     background-color: $color-white;
   }
 
-  .slider__image--before {
+  .slider__image-before {
     width: 50%;
     height: 550px;
     content: "";
@@ -95,13 +94,14 @@
     overflow: hidden;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      height: 523px;
       background-image: url("../img/before-tablet@2x.png"), linear-gradient(to bottom, $color-white 33%, $color-light-grey 33%);
       background-size: auto 100%;
-      background-position: 0% 45%;
+      background-position: -14% 45%;
     }
   }
 
-  .slider__image--after {
+  .slider__image-after {
     width: 50%;
     height: 550px;
     content: "";
@@ -110,9 +110,10 @@
     background-repeat: no-repeat;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      height: 523px;
       background-image: url("../img/after-tablet@2x.png"), linear-gradient(to bottom, $color-white 33%, #eaeaea 33%);
       background-size: auto 100%;
-      background-position: 106% 45%;
+      background-position: 109% 55%;
     }
   }
 
@@ -121,12 +122,17 @@
     justify-content: space-between;
     padding: 0 99px;
     padding-bottom: 69px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      padding-top: 18px;
+    }
   }
 
   .slider__item {
     padding: 0;
     margin: 0;
     padding-bottom: 4px;
+    border-bottom: 1px dotted #bebebe;
   }
 
   .slider__item--before {
@@ -196,7 +202,7 @@
     background: none;
   }
 
-  .slider__image--before {
+  .slider__image-before {
     width: 53%;
     background-image: url("../img/before-desktop@1x.png"), linear-gradient(to bottom, $color-white 35%, $color-light-grey 33%);
     background-position: 10% 67%;
@@ -204,11 +210,11 @@
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/before-desktop@2x.png"), linear-gradient(to bottom, $color-white 35%, $color-light-grey 33%);
       background-size: 690px auto;
-      background-position: 10% 45%;
+      background-position: 11% 58%;
     }
   }
 
-  .slider__image--after {
+  .slider__image-after {
     width: 47%;
     background-image: url("../img/after-desktop@1x.png"), linear-gradient(to bottom, $color-white 35%, #eaeaea 33%);
     background-position: 90% 71%;
@@ -216,7 +222,7 @@
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/after-desktop@2x.png"), linear-gradient(to bottom, $color-white 35%, #eaeaea 33%);
       background-size: 690px auto;
-      background-position: 86% 45%;
+      background-position: 90% 60%;
     }
   }
 
