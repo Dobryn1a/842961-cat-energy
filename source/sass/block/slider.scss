@@ -80,7 +80,7 @@
   .slider__image {
     display: flex;
     justify-content: space-between;
-    padding-top: 52px;
+    padding-top: 57px;
     background-color: $color-white;
   }
 
@@ -95,7 +95,7 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       height: 523px;
-      background-image: url("../img/before-tablet@2x.png"), linear-gradient(to bottom, $color-white 33%, $color-light-grey 33%);
+      background-image: url("../img/before-tablet@2x.png"), linear-gradient(to bottom, $color-white 168px, $color-light-grey 160px);
       background-size: auto 100%;
       background-position: -14% 45%;
     }
@@ -111,7 +111,7 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       height: 523px;
-      background-image: url("../img/after-tablet@2x.png"), linear-gradient(to bottom, $color-white 33%, #eaeaea 33%);
+      background-image: url("../img/after-tablet@2x.png"), linear-gradient(to bottom, $color-white 168px, #eaeaea 160px);
       background-size: auto 100%;
       background-position: 109% 55%;
     }
@@ -124,7 +124,7 @@
     padding-bottom: 69px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      padding-top: 20px;
+      padding-top: 14px;
     }
   }
 
@@ -198,17 +198,17 @@
 
   .slider__image {
     display: flex;
-    padding-top: 2px;
+    padding-top: 1px;
     background: none;
   }
 
   .slider__image-before {
     width: 53%;
-    background-image: url("../img/before-desktop@1x.png"), linear-gradient(to bottom, $color-white 212px, $color-light-grey 33%);
+    background-image: url("../img/before-desktop@1x.png"), linear-gradient(to bottom, $color-white 211px, $color-light-grey 33%);
     background-position: 10% 67%;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/before-desktop@2x.png"), linear-gradient(to bottom, $color-white 212px, $color-light-grey 33%);
+      background-image: url("../img/before-desktop@2x.png"), linear-gradient(to bottom, $color-white 211px, $color-light-grey 33%);
       background-size: 690px auto;
       background-position: 11% 325%;
     }
