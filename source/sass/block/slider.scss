@@ -80,7 +80,7 @@
   .slider__image {
     display: flex;
     justify-content: space-between;
-    padding-top: 54px;
+    padding-top: 52px;
     background-color: $color-white;
   }
 
@@ -124,7 +124,7 @@
     padding-bottom: 69px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      padding-top: 18px;
+      padding-top: 20px;
     }
   }
 
