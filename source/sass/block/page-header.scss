@@ -48,24 +48,24 @@
   top: 30px;
   right: 54px;
 
-	&::before {
-		content: "";
-		position: absolute;
-		width: 24px;
-	  height: 2px;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 2px;
     top: 8px;
-    left: 0px;
-		background-color: $color-black;
+    left: 0;
+    background-color: $color-black;
   }
 
-	&::after {
-		content: "";
-		position: absolute;
-		width: 24px;
-	  height: 2px;
-    top: -8px;
-    left: 0px;
-		background-color: $color-black;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    top: 8px;
+    left: 0;
+    background-color: $color-black;
   }
 }
 
