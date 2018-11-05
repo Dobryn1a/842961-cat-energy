@@ -204,32 +204,32 @@
 
   .slider__image-before {
     width: 53%;
-    background-image: url("../img/before-desktop@1x.png"), linear-gradient(to bottom, $color-white 35%, $color-light-grey 33%);
+    background-image: url("../img/before-desktop@1x.png"), linear-gradient(to bottom, $color-white 212px, $color-light-grey 33%);
     background-position: 10% 67%;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/before-desktop@2x.png"), linear-gradient(to bottom, $color-white 35%, $color-light-grey 33%);
+      background-image: url("../img/before-desktop@2x.png"), linear-gradient(to bottom, $color-white 212px, $color-light-grey 33%);
       background-size: 690px auto;
-      background-position: 11% 58%;
+      background-position: 11% 325%;
     }
   }
 
   .slider__image-after {
     width: 47%;
-    background-image: url("../img/after-desktop@1x.png"), linear-gradient(to bottom, $color-white 35%, #eaeaea 33%);
+    background-image: url("../img/after-desktop@1x.png"), linear-gradient(to bottom, $color-white 212px, #eaeaea 33%);
     background-position: 90% 71%;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/after-desktop@2x.png"), linear-gradient(to bottom, $color-white 35%, #eaeaea 33%);
+      background-image: url("../img/after-desktop@2x.png"), linear-gradient(to bottom, $color-white 212px, #eaeaea 33%);
       background-size: 690px auto;
-      background-position: 90% 60%;
+      background-position: 90% 325%;
     }
   }
 
   .slider__wrapper {
     padding: 0;
-    padding-top: 28px;
-    padding-bottom: 66px;
+    padding-top: 54px;
+    padding-bottom: 67px;
     padding-left: 40px;
     background: linear-gradient(to right, #f2f2f2 53%, #eaeaea 50%);
   }

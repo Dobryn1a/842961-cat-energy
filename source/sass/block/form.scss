@@ -22,7 +22,7 @@
 
 .form__row {
   padding: 0 20px;
-  padding-bottom: 15px;
+  padding-bottom: 14px;
   margin: 0;
   display: flex;
   align-items: center;
@@ -153,7 +153,7 @@
 
 .wrapper--form {
   padding: 0;
-  padding-bottom: 42px;
+  padding-bottom: 41px;
 }
 
 .form__section {
@@ -177,7 +177,7 @@
 }
 
 .form__section--contact {
-  padding-bottom: 30px;
+  padding-bottom: 28px;
   margin: 0;
   position: relative;
   border-top: 3px solid #68b738;
@@ -418,7 +418,7 @@
   }
 
   .form__row {
-    padding-bottom: 18px;
+    padding-bottom: 20px;
   }
 
   .form__row--age {
@@ -478,11 +478,11 @@
   .form__section--contact {
     padding: 0;
     border-top: 3px solid #68b738;
-    padding-bottom: 68px;
+    padding-bottom: 70px;
   }
 
   .form__wrapper {
-    padding-bottom: 54px;
+    padding-bottom: 99px;
   }
 
   .wrapper--form {
@@ -571,7 +571,7 @@
     margin: 0;
     padding-left: 39px;
     padding-right: 42px;
-    padding-bottom: 40px;
+    padding-bottom: 42px;
 
     &::after {
       display: none;
@@ -593,14 +593,14 @@
   }
 
   .form__label--checkbox .form__checkbox + .form__checkbox-indicator {
-    top: -12%;
+    top: -44%;
     left: 0%;
     width: 40px;
     height: 40px;
   }
 
   .form__label--checkbox .form__checkbox:checked + .form__checkbox-indicator {
-    top: -12%;
+    top: -44%;
     left: 0%;
     width: 40px;
     height: 40px;
@@ -631,7 +631,7 @@
     padding: 0;
     padding-top: 16px;
     padding-left: 61px;
-    padding-bottom: 93px;
+    padding-bottom: 91px;
     font-size: 16px;
     line-height: 16px;
   }
@@ -673,7 +673,7 @@
   .form__row {
     padding: 0;
     padding-right: 40px;
-    padding-bottom: 17px;
+    padding-bottom: 20px;
   }
 
   .form__row--age {
@@ -779,7 +779,7 @@
     padding-bottom: 52px;
   }
 
-  .form__comment--wrapper {
+  .form__comment-wrapper {
     padding: 0;
   }
 
@@ -812,6 +812,16 @@
 
   .form__label--checkbox {
     width: 245px;
+  }
+
+  .form__label--checkbox .form__checkbox + .form__checkbox-indicator {
+    top: -39%;
+    left: 0%;
+  }
+
+  .form__label--checkbox .form__checkbox:checked + .form__checkbox-indicator {
+    top: -39%;
+    left: 0%;
   }
 
   .form__section-wrapper {
