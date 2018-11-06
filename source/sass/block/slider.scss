@@ -236,5 +236,9 @@
     padding-bottom: 67px;
     padding-left: 40px;
     background: linear-gradient(to right, #f2f2f2 53%, #eaeaea 50%);
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      padding-top: 56px;
+    }
   }
 }
