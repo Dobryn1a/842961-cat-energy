@@ -89,14 +89,14 @@
     width: 50%;
     height: 550px;
     content: "";
-    background-image: url("../img/before-tablet@1x.png"), linear-gradient(to bottom, $color-white 166px, $color-light-grey 150px);
+    background-image: url("../img/before-tablet@1x.png"), linear-gradient(to bottom, $color-white 181px, $color-light-grey 150px);
     background-position: -15% 45%;
     background-repeat: no-repeat;
     overflow: hidden;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       height: 523px;
-      background-image: url("../img/before-tablet@2x.png"), linear-gradient(to bottom, $color-white 152px, $color-light-grey 150px);
+      background-image: url("../img/before-tablet@2x.png"), linear-gradient(to bottom, $color-white 167px, $color-light-grey 150px);
       background-size: auto 100%;
       background-position: -14% 45%;
     }
@@ -106,13 +106,13 @@
     width: 50%;
     height: 550px;
     content: "";
-    background-image: url("../img/after-tablet@1x.png"), linear-gradient(to bottom, $color-white 166px, #eaeaea 150px);
+    background-image: url("../img/after-tablet@1x.png"), linear-gradient(to bottom, $color-white 181px, #eaeaea 150px);
     background-position: 110% 45%;
     background-repeat: no-repeat;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       height: 523px;
-      background-image: url("../img/after-tablet@2x.png"), linear-gradient(to bottom, $color-white 152px, #eaeaea 150px);
+      background-image: url("../img/after-tablet@2x.png"), linear-gradient(to bottom, $color-white 167px, #eaeaea 150px);
       background-size: auto 100%;
       background-position: 109% 55%;
     }
@@ -205,11 +205,11 @@
 
   .slider__image-before {
     width: 53%;
-    background-image: url("../img/before-desktop@1x.png"), linear-gradient(to bottom, $color-white 211px, $color-light-grey 33%);
+    background-image: url("../img/before-desktop@1x.png"), linear-gradient(to bottom, $color-white 212px, $color-light-grey 33%);
     background-position: 10% 67%;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/before-desktop@2x.png"), linear-gradient(to bottom, $color-white 211px, $color-light-grey 33%);
+      background-image: url("../img/before-desktop@2x.png"), linear-gradient(to bottom, $color-white 212px, $color-light-grey 33%);
       background-size: 690px auto;
       background-position: 11% 325%;
     }
