@@ -16,7 +16,8 @@
 
 .slider__wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 0 40px;
 }
 
 .slider__item {
@@ -37,18 +38,14 @@
 }
 
 .slider__item--before {
-  margin-right: 19px;
-}
-
-.slider__item--after {
-  margin-left: 19px;
+  padding-left: 3px;
 }
 
 .slider__toggles {
   position: relative;
   padding: 0;
   margin: 0;
-  margin-top: 3px;
+  margin-top: 1px;
   width: 84px;
   height: 14px;
   border-radius: 6px;
@@ -92,14 +89,14 @@
     width: 50%;
     height: 550px;
     content: "";
-    background-image: url("../img/before-tablet@1x.png"), linear-gradient(to bottom, $color-white 33%, $color-light-grey 33%);
+    background-image: url("../img/before-tablet@1x.png"), linear-gradient(to bottom, $color-white 166px, $color-light-grey 150px);
     background-position: -15% 45%;
     background-repeat: no-repeat;
     overflow: hidden;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       height: 523px;
-      background-image: url("../img/before-tablet@2x.png"), linear-gradient(to bottom, $color-white 168px, $color-light-grey 160px);
+      background-image: url("../img/before-tablet@2x.png"), linear-gradient(to bottom, $color-white 152px, $color-light-grey 150px);
       background-size: auto 100%;
       background-position: -14% 45%;
     }
@@ -109,13 +106,13 @@
     width: 50%;
     height: 550px;
     content: "";
-    background-image: url("../img/after-tablet@1x.png"), linear-gradient(to bottom, $color-white 33%, #eaeaea 33%);
+    background-image: url("../img/after-tablet@1x.png"), linear-gradient(to bottom, $color-white 166px, #eaeaea 150px);
     background-position: 110% 45%;
     background-repeat: no-repeat;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       height: 523px;
-      background-image: url("../img/after-tablet@2x.png"), linear-gradient(to bottom, $color-white 168px, #eaeaea 160px);
+      background-image: url("../img/after-tablet@2x.png"), linear-gradient(to bottom, $color-white 152px, #eaeaea 150px);
       background-size: auto 100%;
       background-position: 109% 55%;
     }

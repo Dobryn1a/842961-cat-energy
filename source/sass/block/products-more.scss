@@ -13,7 +13,7 @@
   background-color: $color-white;
 }
 
-.products-more__wrapper {
+.products-more {
   border-top: 3px solid #68b738;
   margin: 0;
 }
@@ -28,7 +28,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .products-more__wrapper {
+  .products-more {
     border-top: 3px solid #68b738;
     padding: 0;
   }
@@ -56,7 +56,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .products-more__wrapper {
+  .products-more {
     padding-bottom: 3px;
     border-top: 3px solid #68b738;
   }
