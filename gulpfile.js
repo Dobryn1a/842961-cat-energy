@@ -6,9 +6,9 @@ var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var rename = require("gulp-rename");
-var csso = require('gulp-csso');
-var imagemin = require('gulp-imagemin');
-var del = require('del');
+var csso = require("gulp-csso");
+var imagemin = require("gulp-imagemin");
+var del = require("del");
 var server = require("browser-sync").create();
 
 gulp.task("css", function () {
@@ -68,4 +68,5 @@ gulp.task("build", gulp.series(
   "copy",
   "css"
 ));
+
 gulp.task("start", gulp.series("build", "server"));
